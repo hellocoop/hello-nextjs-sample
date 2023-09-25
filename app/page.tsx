@@ -2,9 +2,27 @@
 
 import { useUser, SignInButton } from "@hellocoop/nextjs"
 
+import { } from './header'
+
 export default function Home() {
 
     return (
+
+
+        < MyHeader/>
+            
+        < LoggedIn >
+
+
+        </LoggedIn>
+        < LoggedOut >
+            < MyLoggedOutContent />
+            </LoggedOut>
+        </LoggedOut>
+        <MyFooter>
+
+        <
+
         <main className='max-w-4xl mx-auto p-4'>
             <header className='flex justify-between items-center'>
                 <h1 className='text-2xl font-semibold'>Hellō Next.js Example App</h1>

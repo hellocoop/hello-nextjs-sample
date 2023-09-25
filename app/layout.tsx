@@ -15,6 +15,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+
+    <helloBlackButtonStyle />
+
     <html lang="en">
       <head>
         <link href="https://cdn.hello.coop/css/hello-btn.css" rel="stylesheet" />
