@@ -24,7 +24,7 @@ To create a fork in your own GitHub repository
 
 ```
 # commit the config updates
-git commit all -m"set Hellō config"
+git commit -a -m"set Hellō config"
 
 # make sure we can login to GiitHub
 gh auth login
