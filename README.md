@@ -17,3 +17,22 @@ Prerequisites:
 
 - nodejs 18+
 - git
+
+To create a fork in your own GitHub repository
+
+- requires `gh` 
+
+```
+# commit the config updates
+git commit all -m"set Hellō config"
+
+# make sure we can login to GiitHub
+gh auth login
+
+# create the repo 
+gh repo create hello-nextjs-starter --private
+
+# set remote to be your fork and push code up
+git remote set-url origin hello-nextjs-starter
+git push
+```
