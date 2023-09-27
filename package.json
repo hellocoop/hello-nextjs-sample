@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "npx @hellocoop/quickstart-nextjs"
+    "quickstart": "npx @hellocoop/quickstart-nextjs"
   },
   "dependencies": {
     "@hellocoop/nextjs": "^1.0.0",
