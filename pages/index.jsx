@@ -6,22 +6,17 @@ import ExamplesTable from "@/components/ExamplesTable"
 import LinkCards from "@/components/LinkCards"
 import Profile from "@/components/Profile"
 import ProfileSection from "@/components/ProfileSection"
-import { ContinueButton, LoggedIn, LoggedOut, UpdateEmailButton, UpdatePictureButton } from "@hellocoop/nextjs"
+import { ContinueButton, LoggedIn, LoggedOut, UpdateEmailButton, UpdatePictureButton, useUser } from "@hellocoop/nextjs"
 
 export default function Home() {
-    // const user = useUser()
-    const user = {
-        picture: "https://avatars.githubusercontent.com/u/15141246?v=4",
-        name: "John Smith",
-        email: "johnsmith@example.com"
-    }
+    const user = useUser()
     return (
         <Layout> {/* Has Header and Footer */}
             <LoggedOut> 
                 <Hero/>
                 
                 {/* Continue with Hellō button */}
-                {/* <ContinueButton/>  */}
+                <ContinueButton/> 
 
                 <Divider/>
                 <Description/>
@@ -32,20 +27,20 @@ export default function Home() {
             <LoggedIn>
                 <Profile heading="Your Profile">
                     <ProfileSection>
-                        <h2 className="text-lg text-left">{user.name}</h2>
+                        <h2 className="text-xl text-left">{user?.name}</h2>
                     </ProfileSection>
                     
                     <ProfileSection>
                         {/* Use next/image */}
-                        <img src={user.picture} className="h-24 rounded-full bg-gray-700" />
+                        <img src={user?.picture} className="h-24 rounded-full bg-gray-700" />
                         {/* Update Pictutre with Hellō button */}
-                        {/* <UpdatePictureButton/>  */}
+                        <UpdatePictureButton/> 
                     </ProfileSection>
 
                     <ProfileSection>
-                        <h2 className="text-lg text-left">{user.email}</h2>
+                        <h2 className="text-xl text-left">{user?.email}</h2>
                         {/* Update Email with Hellō button */}
-                        {/* <UpdateEmailButton/>  */}
+                        <UpdateEmailButton/> 
                     </ProfileSection>
                 </Profile>
             </LoggedIn>
