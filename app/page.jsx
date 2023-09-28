@@ -1,3 +1,5 @@
+'use client'
+
 import Layout from "@/components/Layout"
 import Hero from "@/components/Hero"
 import Divider from "@/components/Divider"
