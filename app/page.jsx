@@ -18,7 +18,7 @@ export default function Home() {
                 <Hero/>
                 
                 {/* Continue with Hellō button */}
-                <ContinueButton targetURI="/" /> 
+                <ContinueButton/> 
 
                 <Divider/>
                 <Description/>
@@ -36,13 +36,13 @@ export default function Home() {
                         {/* Use next/image */}
                         <img src={user?.picture} className="h-24 rounded-full bg-gray-700" />
                         {/* Update Pictutre with Hellō button */}
-                        <UpdatePictureButton targetURI="/" /> 
+                        <UpdatePictureButton/> 
                     </ProfileSection>
 
                     <ProfileSection>
                         <h2 className="text-xl text-left">{user?.email}</h2>
                         {/* Update Email with Hellō button */}
-                        <UpdateEmailButton targetURI="/" /> 
+                        <UpdateEmailButton/> 
                     </ProfileSection>
                 </Profile>
             </LoggedIn>
