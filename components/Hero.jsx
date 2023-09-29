@@ -4,7 +4,7 @@ export default function Hero() {
     return (
         <section>
             <div className="space-y-1 mb-6">
-                <h1 className="text-2xl">Login and registration in less than a minute</h1>
+                <h1 className="text-2xl">Add login and registration in seconds</h1>
                 <LoggedOut>
                     <h2 className="text-2xl font-thin">Try out the demo</h2>
                 </LoggedOut>
