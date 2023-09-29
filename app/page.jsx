@@ -18,7 +18,7 @@ export default function Home() {
                 <ContinueButton/> 
             </LoggedOut>
             <LoggedIn>
-                <p className="bg-green-800 p-6 inline-block">
+                <p className="bg-green-900 p-6 h-64 inline-flex items-center justify-center">
                     TBD: Value Proposition Here / What just happened after Login with Hellō
                 </p>
             </LoggedIn>
