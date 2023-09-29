@@ -17,9 +17,9 @@ export default function Header() {
                 </Link>
 
                 <LoggedIn>
-                    <nav className="flex items-center space-x-4">
-                        {pathname !== "/profile" && <Link href="/profile">Profile</Link>}
-                        <Link href={logOutRoute}>Log Out</Link>
+                    <nav className="flex items-center space-x-1">
+                        {pathname !== "/profile" && <Link href="/profile" className="hover:bg-[#505050] rounded-sm px-2 py-0.5">Profile</Link>}
+                        <Link href={logOutRoute} className="hover:bg-[#505050] rounded-sm px-2 py-0.5">Log Out</Link>
                     </nav>
                 </LoggedIn>
             </div>
