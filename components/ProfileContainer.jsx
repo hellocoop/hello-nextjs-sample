@@ -1,4 +1,4 @@
-export default function Profile({ children, heading }) {
+export default function ProfileContainer({ children, heading }) {
     return (
         <section className="flex flex-col items-start">
             <h1 className="text-2xl font-medium">{heading}</h1>
