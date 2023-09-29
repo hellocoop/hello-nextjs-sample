@@ -7,8 +7,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
  
 export const metadata: Metadata = {
-  title: 'Hellō NEXT.js Starter',
-  description: 'Auth in seconds',
+  title: 'Hellō Next.js Starter',
+  description: 'Login and registration in seconds',
 }
  
 export default function RootLayout({

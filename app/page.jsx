@@ -26,10 +26,9 @@ export default function Home() {
                 {/* Continue with Hellō button */}
                 <ContinueButton/> 
             </LoggedOut>
+
             <LoggedIn>
-                <p className="bg-green-900 p-6 h-64 inline-flex items-center justify-center">
-                    TBD: Value Proposition Here / What just happened after Login with Hellō
-                </p>
+                    Hellō to a new World
             </LoggedIn>
 
             <Divider/>
