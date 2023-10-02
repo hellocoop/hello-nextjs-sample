@@ -1,7 +1,9 @@
 # Hellō Next.js Starter
 
-Getting started Tl;dr:
-
+## Getting started Tl;dr:
+You will need: 
+- nodejs 18+
+- git
 ```
 git clone https://github.com/hellocoop/hello-nextjs-starter.git
 cd hello-nextjs-starter
@@ -14,7 +16,19 @@ Then open <http://localhost:3000> (assuming port 3000 was free)
 
 You will be running a local node server configured with Hellō is less than a minute.
 
-You will need:
+## Deploy to Vercel / Netlify
 
-- nodejs 18+
+### 1. Create your own fork
+You will need:
 - git
+- gh 
+- Vercel or Netlify account
+```
+git remote rename origin upstream
+gh repo create --source ./ --private
+git add *
+git commit -a -m"quickstart"
+git push
+```
+
+### 2.a Deploy to Vercel
