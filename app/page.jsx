@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image"
 import Hero from "@/components/Hero"
 import Divider from "@/components/Divider"
 import Description from "@/components/Description"
@@ -19,7 +20,7 @@ export default function Home() {
             <LoggedIn>
                 <section className="relative h-64 bg-no-repeat bg-center bg-contain flex items-center justify-center text-2xl font-mono my-16">
                     Hellō to a new World<span className="blinker"></span>
-                    <img src="world.png" className="absolute h-64 opacity-90"/>
+                    <Image src="/world.png" alt="Hellō to a new World" className="absolute opacity-90" width={260} height={256}/>
                 </section>
             </LoggedIn>
 

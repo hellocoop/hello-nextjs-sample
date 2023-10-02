@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image"
 import { useUser, UpdateEmailButton, UpdatePictureButton, LoggedIn } from "@hellocoop/nextjs"
 import ProfileContainer from "@/components/ProfileContainer"
 import ProfileSection from "@/components/ProfileSection"
@@ -15,7 +16,7 @@ export default function Profile(){
                 
                 <ProfileSection>
                     {/* Use next/image */}
-                    <img src={user?.picture} className="h-24 rounded-full bg-gray-700" />
+                    <img src={user?.picture} alt={user?.name} className="h-24 rounded-full bg-gray-700" />
                     {/* Update Pictutre with Hellō button */}
                     <UpdatePictureButton/> 
                 </ProfileSection>
