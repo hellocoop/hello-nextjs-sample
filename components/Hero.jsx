@@ -25,7 +25,7 @@ export default function Hero() {
             </div>
             <LoggedIn>
                 <section className="relative h-64 bg-no-repeat bg-center bg-contain flex items-center justify-center text-2xl font-mono my-16">
-                    Hellō to a Co-operative World<span className="blinker"></span>
+                    Say Hellō to a Co-operative World<span className="blinker"></span>
                     <Image src="/world.png" alt="Hellō to a new World" className="absolute opacity-90" width={260} height={256}/>
                 </section>
 
