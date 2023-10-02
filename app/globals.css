@@ -24,3 +24,12 @@ body {
     color-scheme: dark;
   }  
 }
+
+a:not(header a):not(footer a):not(.link-card) {
+  color: #0072f5;
+  transition: color .2s ease;
+}
+
+a:hover:not(header a):not(footer a):not(.link-card) {
+  color: #68b5fb;
+}
