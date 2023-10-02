@@ -1,5 +1,5 @@
 export default function Divider() {
     return (
-        <hr className="opacity-30 my-10"/>
+        <hr className="border-black dark:border-white opacity-25 my-10"/>
     )
 }

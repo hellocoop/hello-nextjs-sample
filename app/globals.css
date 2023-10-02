@@ -22,7 +22,10 @@ body {
     color: #d4d4d4;
     background-color: #151515;
     color-scheme: dark;
-  }  
+  }
+  .blinker {
+    background: #d4d4d4;
+  }
 }
 
 a:not(header a):not(footer a):not(.link-card) {
@@ -32,4 +35,43 @@ a:not(header a):not(footer a):not(.link-card) {
 
 a:hover:not(header a):not(footer a):not(.link-card) {
   color: #68b5fb;
+}
+
+.blinker {
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1, 0, 0, 1);
+  animation-duration: 1s;
+  display: inline-block;
+  width: 2px;
+  height: 26px;
+  margin-left: 6px;
+  margin-bottom: 2px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  background: #303030;
+}
+
+@-webkit-keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .blinker {
+    background: #d4d4d4;
+  }
 }

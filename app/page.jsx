@@ -17,7 +17,10 @@ export default function Home() {
             </LoggedOut>
 
             <LoggedIn>
-                    Hellō to a new World
+                <section className="relative h-64 bg-no-repeat bg-center bg-contain flex items-center justify-center text-2xl font-mono my-16">
+                    Hellō to a new World<span className="blinker"></span>
+                    <img src="world.png" className="absolute h-64 opacity-90"/>
+                </section>
             </LoggedIn>
 
             <Divider/>
