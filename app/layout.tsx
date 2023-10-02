@@ -22,7 +22,7 @@ export default function RootLayout({
       <body>
         <Header/>
           <main className="py-10 px-4 text-center flex-1 overflow-auto">
-              <div className="max-w-3xl mx-auto">
+              <div className="max-w-4xl mx-auto">
                   {children}
               </div>
           </main>
