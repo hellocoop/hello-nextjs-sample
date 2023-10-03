@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { LoggedOut, LoggedIn, useUser } from "@/hellocoop-nextjs";
+import { LoggedOut, LoggedIn, useUser } from "@hellocoop/nextjs";
 
 export default function Hero() {
     const user = useUser()

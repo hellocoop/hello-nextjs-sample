@@ -1,4 +1,4 @@
-import { useUser, UpdateEmailButton, UpdatePictureButton, LoggedIn } from "@/hellocoop-nextjs"
+import { useUser, UpdateEmailButton, UpdatePictureButton, LoggedIn } from "@hellocoop/nextjs"
 import Layout from "@/components/Layout"
 import ProfileContainer from "@/components/ProfileContainer"
 import ProfileSection from "@/components/ProfileSection"

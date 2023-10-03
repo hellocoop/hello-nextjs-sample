@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { LoggedIn, logOutRoute, useUser } from "@/hellocoop-nextjs"
+import { LoggedIn, logOutRoute, useUser } from "@hellocoop/nextjs"
 import { useRouter } from "next/router"
 
 export default function Header() {
