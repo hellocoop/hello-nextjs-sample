@@ -22,7 +22,7 @@ export default function Header() {
             <div className="max-w-4xl h-full mx-auto flex items-center justify-between">
                 <Link className="inline-flex items-center space-x-2" href="/">
                     <Image src="hello.svg" alt="Hello" width={52} height={16}/>
-                    <Image src="next.svg" alt="Next.js" width={82} height={16} className="pl-1"/>
+                    <Image src="next.svg" alt="Next.js" width={82} height={15} className="pl-1"/>
                     <span className="text-2xl -mt-0.5 italic">Starter</span>
                 </Link>
 
