@@ -1,5 +1,3 @@
-'use client'
-
 import useUser from "./user"
 
 export function LoggedIn({ children }: any) { //TBD type: any

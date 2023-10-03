@@ -1,13 +1,12 @@
-'use client'
-
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { LoggedIn, logOutRoute, useUser } from "@/hellocoop-nextjs"
-import { usePathname } from "next/navigation"
+import { useRouter } from "next/router"
 
 export default function Header() {
-    const pathname = usePathname()
+    const router = useRouter()
+    const pathname = router.pathname
     const user = useUser()
     
     const [ menu, setMenu ] = useState(false)
@@ -20,10 +19,12 @@ export default function Header() {
     return (
         <header className="h-12 w-full bg-[#303030] flex-shrink-0 px-4">
             <div className="max-w-4xl h-full mx-auto flex items-center justify-between">
-                <Link className="inline-flex items-center space-x-2" href="/">
-                    <Image src="hello.svg" alt="Hello" width={52} height={16}/>
-                    <Image src="next.svg" alt="Next.js" width={82} height={15} className="pl-1"/>
-                    <span className="text-2xl -mt-0.5 italic">Starter</span>
+                <Link href="/">
+                    <span className="inline-flex items-center space-x-2">
+                        <img src="/hello.svg" alt="Hello" className="h-4" />
+                        <img src="/next.svg" alt="Next.js" className="h-4 pl-1"/>
+                        <span className="text-2xl -mt-0.5 italic">Starter</span>
+                    </span>
                 </Link>
 
                 <LoggedIn>

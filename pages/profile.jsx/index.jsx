@@ -1,5 +1,3 @@
-'use client'
-
 import { useUser, UpdateEmailButton, UpdatePictureButton, LoggedIn } from "@/hellocoop-nextjs"
 import ProfileContainer from "@/components/ProfileContainer"
 import ProfileSection from "@/components/ProfileSection"
