@@ -10,10 +10,13 @@
         "quickstart": "npx @hellocoop/quickstart-nextjs"
     },
     "dependencies": {
-        "@hellocoop/nextjs": "latest",
-        "next": "^13.5.1",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "next": "^12.1.6",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0",
+        "swr": "^2.2.2",
+        "iron-session": "^6.3.1",
+        "@hellocoop/utils": "latest",
+        "cors": "^2.8.5"
     },
     "devDependencies": {
         "@hellocoop/quickstart-nextjs": "latest",
