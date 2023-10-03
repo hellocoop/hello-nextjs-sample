@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { LoggedIn, logOutRoute, useUser } from "@hellocoop/nextjs"
+import { LoggedIn, logOutRoute, useUser } from "@/hellocoop-nextjs"
 import { usePathname } from "next/navigation"
 
 export default function Header() {

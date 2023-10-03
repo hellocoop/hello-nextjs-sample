@@ -1,5 +1,3 @@
-'use client'
-
 import Hero from "@/components/Hero"
 import Divider from "@/components/Divider"
 import Description from "@/components/Description"

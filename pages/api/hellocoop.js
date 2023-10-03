@@ -1,2 +1,2 @@
 
-export { handleAuth as default } from '@hellocoop/nextjs'
+export { handleAuth as default } from '@/hellocoop-nextjs'
