@@ -13,7 +13,7 @@ export default function Hero() {
                 </LoggedOut>
                 
             </div>
-            <div className="text-left mx-auto w-64 mb-6">
+            <div className="text-left mx-auto w-64 mb-6 pl-4">
                 <LoggedOut>
                     <h3>You will be prompted to provide:</h3>
                     <ul className="list-disc list-inside">
