@@ -69,8 +69,10 @@ function UpdateBaseButton({ label, updateScope, targetURI, providerHint }: Updat
     const params = new URLSearchParams()
     if(updateScope)
         params.set("scope", "profile_update " + updateScope)
-    if(targetURI)
-        params.set("target_uri", targetURI)
+    
+    targetURI = targetURI || window.location.pathname //Go back to current page
+    params.set("target_uri", targetURI)
+    
     if(providerHint)
         params.set("provider_hint", providerHint)
 
