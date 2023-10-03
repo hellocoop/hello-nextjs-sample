@@ -28,7 +28,9 @@ git remote rename origin upstream
 gh repo create --source ./ --private
 git add *
 git commit -a -m"quickstart"
-git push
+git push origin
 ```
 
-### 2.a Deploy to Vercel
+### 2 Deploy to Vercel or Netlify
+
+Login to Vercel / Netlify and link your GitHub (or other) account, and then select the `hello-nextjs-starter` repo and deploy it.
