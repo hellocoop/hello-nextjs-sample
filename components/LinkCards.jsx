@@ -20,10 +20,10 @@ const links = [
 
 export default function LinkCards() {
     return (
-        <section className="flex flex-wrap justify-between mt-10 gap-4">
+        <section className="flex flex-wrap justify-between mt-10 gap-0">
             {links.map(i => 
-                <Link href={i.link} target="_blank" key={i.link}>
-                    <span className="link-card cursor-pointer w-full lg:w-72 h-32 border dark:border-[white] border-[#303030] dark:border-opacity-25 border-opacity-25 hover:border-opacity-60 dark:hover:border-opacity-25 rounded-lg p-4 dark:hover:bg-[#202020] text-left flex flex-col items-start justify-between">
+                <Link href={i.link} target="_blank" key={i.link} className="link-card w-full lg:w-72 h-32 cursor-pointer">
+                    <span className="border dark:border-[white] border-[#303030] dark:border-opacity-25 border-opacity-25 hover:border-opacity-60 dark:hover:border-opacity-25 rounded-lg p-4 dark:hover:bg-[#202020] text-left flex flex-col items-start justify-between">
                         <span className="font-medium text-lg" dangerouslySetInnerHTML={{__html: i.text}} />
                         <span className="opacity-80">{i.linkText}</span>
                     </span>
