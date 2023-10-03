@@ -41,7 +41,7 @@ Login to Vercel, link your GitHub (or other) account, and then select your `hell
 
 No configuration needed at Vercel! 
 
-When you first login to your deployed app, you will be prompted to add the Redirect URI to your app at the [Hello Developer Console](https://console.hello.coop/).
+The first time you login to your deployed app, you will be prompted to add the Redirect URI to your app at the [Hello Developer Console](https://console.hello.coop/). For development deployments, add to your Development Redirect URIs, for production or deployments you want others to access, add to your Production Redirect URIs.
 
 ---
 ## Learn More
