@@ -1,6 +1,5 @@
 'use client'
 
-import Image from "next/image"
 import { useUser, UpdateEmailButton, UpdatePictureButton, LoggedIn } from "@hellocoop/nextjs"
 import ProfileContainer from "@/components/ProfileContainer"
 import ProfileSection from "@/components/ProfileSection"
