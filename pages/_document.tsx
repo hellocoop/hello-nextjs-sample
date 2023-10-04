@@ -5,6 +5,7 @@ export default function Document() {
         <Html>
             <Head>
                 <title>Hellō Next.js Starter</title>
+                <meta charset="UTF-8"></meta>
                 <meta name="title" content="Hellō Next.js Starter"/>
                 <meta name="description" content="Login and registration in seconds"/>
                 <link href="https://cdn.hello.coop/css/hello-btn.css" rel="stylesheet" />
