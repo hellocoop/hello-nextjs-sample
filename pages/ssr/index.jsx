@@ -2,7 +2,7 @@
 import { LoggedIn, LoggedOut, User } from "@/hellocoop-nextjs"
 import Layout from "@/components/Layout"
 
-export default function ssrPage({user: User}) {
+export default function ssrPage({user}) {
   return (
     <Layout>
       {/* Hero deconstructed */}
