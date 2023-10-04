@@ -6,10 +6,10 @@ export default function Hero() {
 
     return (
         <section>
-            <h1 className="text-2xl italic">Add login and registration in seconds</h1>
+            <h1 className="text-[5vw] xs:text-2xl italic">Add login and registration in seconds</h1>
             <div className="my-6">
                 <LoggedOut>
-                    <h2 className="text-[3.42rem]">Try out the demo</h2>
+                    <h2 className="text-[12vw] xs:text-[3.42rem]">Try out the demo</h2>
                 </LoggedOut>
                 
             </div>
@@ -24,7 +24,7 @@ export default function Hero() {
                 </LoggedOut>
             </div>
             <LoggedIn>
-                <section className="relative h-64 bg-no-repeat bg-center bg-contain flex items-center justify-center text-2xl font-mono my-16">
+                <section className="relative h-64 bg-no-repeat bg-center bg-contain flex items-center justify-center text-[4vw] xs:text-2xl font-mono my-16">
                     Say Hellō to a Co-operative World<span className="blinker"></span>
                     <Image src="/world.png" alt="Hellō to a new World" className="absolute opacity-90" width={260} height={256}/>
                 </section>
