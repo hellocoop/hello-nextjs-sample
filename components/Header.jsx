@@ -7,6 +7,8 @@ import { useRouter } from "next/router"
 export default function Header() {
     const router = useRouter()
     const pathname = router.pathname
+    const isSSRPage = router.pathname.startsWith("/ssr")
+
     const user = useUser()
     
     const [ menu, setMenu ] = useState(false)
@@ -19,7 +21,7 @@ export default function Header() {
     return (
         <header className="h-12 w-full bg-[#303030] flex-shrink-0 px-4">
             <div className="max-w-4xl h-full mx-auto flex items-center justify-between">
-                <Link href="/">
+                <Link href={isSSRPage ? "/ssr" : "/"}>
                     <span className="inline-flex items-center space-x-2">
                         <img src="/hello.svg" alt="Hello" className="h-4" />
                         <img src="/next.svg" alt="Next.js" className="h-4 pl-1"/>
@@ -41,8 +43,8 @@ export default function Header() {
                             <>
                                 <nav className="absolute top-8 bg-[#303030] px-6 py-2 flex flex-col items-end md:w-full z-20">
                                     <span className="md:hidden opacity-60 py-2">{user?.email}</span>
-                                    {pathname !== "/profile" && <Link href="/profile" className="py-2">Profile</Link>}
-                                    <Link href={logOutRoute} className="py-2">Log Out</Link>
+                                    {!["/ssr/profile", "/profile"].includes(pathname) && <Link href={isSSRPage ? "/ssr/profile" : "/profile"} className="py-2">Profile</Link>}
+                                    <Link href={isSSRPage ? `${logOutRoute}&target_uri=/ssr` : logOutRoute} className="py-2">Log Out</Link>
                                 </nav>
                                 <span onClick={()=>setMenu(false)} className="h-screen w-screen left-0 fixed z-10 top-12 bg-black bg-opacity-80"></span>
                             </>

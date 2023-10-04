@@ -12,11 +12,11 @@ export default function useUser(): User | undefined {
     const router = useRouter()
     const pathname = router.pathname
 
-    useEffect(() => {
-        if (user && !user?.isLoggedIn) {
-            router.push(defaultTargetRoute)
-        }
-    }, [user, pathname])
+    // useEffect(() => {
+    //     if (user && !user?.isLoggedIn) {
+    //         router.push(defaultTargetRoute)
+    //     }
+    // }, [user, pathname])
 
     return user
 }
