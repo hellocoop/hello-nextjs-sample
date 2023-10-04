@@ -18,7 +18,7 @@ export const getUser = ({ session }: GetUserOptions) => {
     return session.user
 }
 
-const getProps = function (context:GetServerSidePropsContext): GetServerSidePropsResult<User> {
+const getProps = function (context:GetServerSidePropsContext): GetServerSidePropsResult<{user:User}> {
     const user: User = context.req?.session?.user || { isLoggedIn: false }
 
 
@@ -34,8 +34,9 @@ console.log('getProps.cookies',JSON.stringify(context.req.cookies, null, 4))
     //     }
     // }
     return {
-        props: user
+        props: {user}
     }
 }
+
 
 export const getServerSideProps = withIronSessionSsr(getProps,config.sessionOptions)
