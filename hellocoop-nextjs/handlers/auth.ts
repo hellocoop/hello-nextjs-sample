@@ -28,7 +28,7 @@ if (!config.clientId) {
     configured = false
 }        
 
-// console.log('config\n',JSON.stringify(config,null,4))   
+console.log('config\n',JSON.stringify(config,null,4))   
 
 export const handleAuth = translateHandlerErrors((req: NextApiRequest, res: NextApiResponse) => {
         const { query } = req

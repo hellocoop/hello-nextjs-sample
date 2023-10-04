@@ -1,15 +1,15 @@
 import useUser from "./user"
 
-export function LoggedIn({ children }: any) { //TBD type: any
-    const user = useUser()
-    if(!user || !user?.isLoggedIn)
+export function LoggedIn({ user, children }: any) { //TBD type: any
+    const u = user || useUser()
+    if(!user || u?.isLoggedIn)
         return
     return children
 }
 
-export function LoggedOut({ children }: any) { //TBD type: any
-    const user = useUser()
-    if(!user || user?.isLoggedIn)
+export function LoggedOut({ user, children }: any) { //TBD type: any
+    const u = user || useUser()
+    if(!user || u?.isLoggedIn)
         return
     return children
 }
