@@ -19,15 +19,20 @@ export const getUser = ({ session }: GetUserOptions) => {
 }
 
 const getProps = function (context:GetServerSidePropsContext): GetServerSidePropsResult<User> {
-    const user = context.req.session.user
-    if (!user) {
-        return {
-            redirect: {
-                statusCode: 302,
-                destination: config.defaultTargetRoute
-            }
-        }
-    }
+    const user: User = context.req?.session?.user || { isLoggedIn: false }
+
+
+console.log('getProps:user:',JSON.stringify(user,null,4))
+console.log('getProps.cookies',JSON.stringify(context.req.cookies, null, 4))
+
+    // if (!user) {
+    //     return {
+    //         redirect: {
+    //             statusCode: 302,
+    //             destination: config.defaultTargetRoute
+    //         }
+    //     }
+    // }
     return {
         props: user
     }

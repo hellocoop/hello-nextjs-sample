@@ -1,11 +1,19 @@
 
-import { LoggedIn, LoggedOut, User } from "@/hellocoop-nextjs"
+import { LoggedIn, LoggedOut,ContinueButton } from "@/hellocoop-nextjs"
 import Layout from "@/components/Layout"
+import Divider from "@/components/Divider"
+import Description from "@/components/Description"
+import LinkCards from "@/components/LinkCards"
+import Image from "next/image";
 
-export default function ssrPage({user}) {
+export default function ssrPage(props) {
+
+  console.log('ssrPage:props',JSON.stringify(props,null,4))
+
+  const user = props
+
   return (
     <Layout>
-      {/* Hero deconstructed */}
         <section>
             <h1 className="text-2xl italic">Add login and registration in seconds</h1>
             <div className="my-6">
