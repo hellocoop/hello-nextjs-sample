@@ -25,7 +25,7 @@ You will be running a local node server configured with Hellō is less than a mi
 ### Create your own fork of hello-nextjs-starter
 You will need:
 - git
-- gh 
+- [gh](https://cli.github.com/) 
 - Vercel or Netlify account
 ```
 git remote rename origin upstream
