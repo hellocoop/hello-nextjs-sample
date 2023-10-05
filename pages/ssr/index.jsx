@@ -2,12 +2,11 @@
 import { LoggedOut,ContinueButton, HelloProvider } from "@/hellocoop-nextjs"
 import Hero from "@/components/Hero"
 import Layout from "@/components/Layout"
-import Description from "@/components/Description"
-import LinkCards from "@/components/LinkCards"
+import Content from "@/components/Content"
 
 export default function sspHome({user}) {
 
-  // console.log('ssrPage:props',JSON.stringify(props,null,4))
+  // console.log('ssrPage:props',JSON.stringify(user,null,4))
 
   return (
     <HelloProvider user={user}>
@@ -19,8 +18,7 @@ export default function sspHome({user}) {
             <ContinueButton targetURI="/ssr" /> 
         </LoggedOut>
 
-        <Description/>
-        <LinkCards/>
+        <Content/>
       </Layout>
     </HelloProvider>
   )

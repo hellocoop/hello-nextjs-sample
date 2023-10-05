@@ -1,8 +1,7 @@
-import Hero from "@/components/Hero"
-import Description from "@/components/Description"
-import LinkCards from "@/components/LinkCards"
 import { ContinueButton, LoggedOut, useUser, HelloProvider } from "@/hellocoop-nextjs"
 import Layout from "../components/Layout"
+import Hero from "@/components/Hero"
+import Content from "@/components/Content"
 
 export default function Home() {
     const user = useUser()
@@ -16,8 +15,7 @@ export default function Home() {
                     <ContinueButton/> 
                 </LoggedOut>
 
-                <Description/>
-                <LinkCards/>
+                <Content/>
             </Layout>
         </HelloProvider>
     )

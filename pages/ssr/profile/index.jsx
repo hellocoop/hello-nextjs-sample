@@ -4,7 +4,7 @@ import ProfileContainer from "@/components/ProfileContainer"
 
 export default function sspProfile({user}){
     
-    console.log('ssrPage:props',JSON.stringify(props,null,4))
+    console.log('ssrPage:props',JSON.stringify(user,null,4))
 
     return (
         <HelloProvider user={user}>
