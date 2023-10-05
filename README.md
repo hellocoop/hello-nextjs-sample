@@ -43,7 +43,7 @@ Open <http://localhost:3000> (assuming port 3000 was free)
 
 You will need:
 
-- a [Vercel](https://vercel.com) account linked to your GitHub account
+- A [Vercel](https://vercel.com) account linked to your GitHub account
 - Vercel CLI that is logged into your Vercel account 
 
 ```sh
@@ -64,7 +64,7 @@ No other configuration needed at Vercel!
 ### How Configuration Works
 The Hellō Quickstart Web App created your application at Hellō and returned your `client_id`. You are able to use your app on your own machine immediately as `http://local_host:*` Redirect URIs are enabled for your development team by default.
 
-You are able to access your app when deployed as we have enabled `https://*` Redirect URIs for members of your development team. The first time you login to your deployed app, you will be prompted to add the Redirect URI to your app at the [Hello Developer Console](https://console.hello.coop/). For development deployments, add to your Development Redirect URIs, for production or deployments you want others to access, add to your Production Redirect URIs.
+You are able to access your app when deployed as we have enabled `https://*` Redirect URIs for members of your development team. The first time you login to your deployed app, the [@hellocoop/nextjs](https://www.npmjs.com/package/@hellocoop/nextjs) package auto configures the `redirect_uri`, and on return you will be prompted to add the Redirect URI to your app at the [Hello Developer Console](https://console.hello.coop/). For development deployments, add to your Development Redirect URIs, for production or deployments you want others to access, add to your Production Redirect URIs.
 
 ---
 
