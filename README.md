@@ -24,7 +24,7 @@ This will create a `hello-nextjs-starter` directory on your machine with the con
 
 ## 3\. Install, setup, commit, push and run!
 
-```
+```sh
 cd hello-nextjs-start          # change to project directory
 npm install                    # intall the node modules
 npm run quickstart             # launch the Hellō Quickstart web app to register your app
