@@ -10,18 +10,15 @@
         "quickstart": "npx @hellocoop/quickstart-nextjs"
     },
     "dependencies": {
+        "@hellocoop/nextjs": "latest",
         "@hellocoop/utils": "latest",
         "cobe": "^0.6.3",
-        "cors": "^2.8.5",
-        "iron-session": "^6.3.1",
         "next": "^13.4.1",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "swr": "^2.2.2"
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
         "@hellocoop/quickstart-nextjs": "latest",
-        "@types/cors": "^2.8.14",
         "@types/node": "20.6.1",
         "@types/react": "18.2.21",
         "@types/react-dom": "18.2.7",
