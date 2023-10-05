@@ -1,23 +1,27 @@
-import Hero from "@/components/Hero"
-import Divider from "@/components/Divider"
-import Description from "@/components/Description"
-import LinkCards from "@/components/LinkCards"
-import { ContinueButton, LoggedOut } from "@hellocoop/nextjs"
+import { ContinueButton, LoggedIn, LoggedOut, HelloProvider } from "@/hellocoop-nextjs"
 import Layout from "../components/Layout"
+import Hero from "@/components/Hero"
+import Prompt from "@/components/Prompt"
+import Info from "@/components/Info"
 
-export default function Home() {
+export default function Home({user}) {  
     return (
+      <HelloProvider user={user}>
         <Layout>
-            <Hero/>
-            
-            <LoggedOut>
-                {/* Continue with Hellō button */}
-                <ContinueButton/> 
-            </LoggedOut>
-
-            <Divider/>
-            <Description/>
-            <LinkCards/>
+          <LoggedIn>
+              <Hero/>
+          </LoggedIn>
+          <LoggedOut>
+              <Prompt/>
+              {/* [ ō Continue with Hellō ] */}
+              <ContinueButton theme="aware-static" hover="flare" providerHint="google github gitlab" />
+              {/* Default <ContinueButton color="black" theme="ignore-light" hover="pop" />  */}
+          </LoggedOut>
+          <Info/>
         </Layout>
+      </HelloProvider>
     )
-}
+  }
+  
+  export { getServerSideProps } from "@/hellocoop-nextjs"
+  
