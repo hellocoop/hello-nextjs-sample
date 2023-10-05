@@ -1,10 +1,12 @@
-import { createContext, useContext } from "react"
+import { createContext, useContext } from 'react'
+import useUser from './user'
 
 const HelloContext = createContext(null);
 
 const HelloProvider = ({ user, children } : any) => { //TBD any
+    const u = user || useUser()
     return (
-      <HelloContext.Provider value={user}>
+      <HelloContext.Provider value={u}>
         {children}
       </HelloContext.Provider>
     )
