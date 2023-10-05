@@ -25,13 +25,13 @@ export default function Header() {
                     <span className="inline-flex items-center space-x-2">
                         <img src="/hello.svg" alt="Hello" className="h-4" />
                         <img src="/next.svg" alt="Next.js" className="h-4 pl-1"/>
-                        <span className="text-2xl -mt-0.5 italic">Starter</span>
+                        <span className="text-2xl -mt-0.5 italic text-[#d4d4d4]">Starter</span>
                     </span>
                 </Link>
 
                 <LoggedIn>
                     <div className="flex justify-end relative">
-                        <button onClick={()=>setMenu(!menu)} className="flex items-center space-x-2">
+                        <button onClick={()=>setMenu(!menu)} className="flex items-center space-x-2 text-[#d4d4d4] hover:bg-[#505050] py-1 px-2 rounded-md">
                             {/* Use next/image */}
                             <img src={user?.picture} alt={user?.name} className="rounded-full h-7" />
                             <span className="hidden md:block">{user?.email}</span>
@@ -41,10 +41,10 @@ export default function Header() {
                         </button>
                         {menu && (
                             <>
-                                <nav className="absolute top-8 bg-[#303030] px-6 py-2 flex flex-col items-end md:w-full z-20">
+                                <nav className="absolute top-10 bg-[#303030] px-6 py-2 flex flex-col items-end md:w-3/4 z-20 text-[#d4d4d4]">
                                     <span className="md:hidden opacity-60 py-2">{user?.email}</span>
-                                    {!["/ssr/profile", "/profile"].includes(pathname) && <Link href={isSSRPage ? "/ssr/profile" : "/profile"} className="py-2">Profile</Link>}
-                                    <Link href={isSSRPage ? `${logOutRoute}&target_uri=/ssr` : logOutRoute} className="py-2">Log Out</Link>
+                                    {!["/ssr/profile", "/profile"].includes(pathname) && <Link href={isSSRPage ? "/ssr/profile" : "/profile"} className="py-2 hover:underline">Profile</Link>}
+                                    <Link href={isSSRPage ? `${logOutRoute}&target_uri=/ssr` : logOutRoute} className="py-2 hover:underline">Log Out</Link>
                                 </nav>
                                 <span onClick={()=>setMenu(false)} className="h-screen w-screen left-0 fixed z-10 top-12 bg-black bg-opacity-80"></span>
                             </>
