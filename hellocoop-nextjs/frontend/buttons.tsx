@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useRouter } from 'next/router'
+import styles from './buttons.module.css'
 
 import { loginApiRoute } from '../lib/config'
 
@@ -9,32 +10,32 @@ export interface BaseButtonProps {
     style?: any //TBD type: any
     disabled?: boolean
     showLoader?: boolean
+    buttonStyle?: string
+    buttonHoverStyle?: string
+    providerHint?: string
+    targetURI?: string
 }
 
 
-export interface LoginButtonProps {
-    label: string
+export interface LoginButtonProps extends BaseButtonProps {
     scope?: string
-    targetURI?: string
-    providerHint?: string
 }
 
-export interface UpdateButtonProps {
-    label: string
+export interface UpdateButtonProps extends BaseButtonProps {
     updateScope?: "email" | "picture"
-    targetURI?: string
-    providerHint?: string
 }
 
-function BaseButton({ label, onClick, disabled, showLoader, style } : BaseButtonProps) {
+function BaseButton({ label, onClick, disabled, showLoader, style, buttonStyle = "", buttonHoverStyle = "" } : BaseButtonProps) {
     return (
-        <button onClick={onClick} disabled={disabled} style={style} className={`hello-btn-black-and-static ${showLoader ? 'hello-btn-loader' : ''}`}>
+        <button onClick={onClick} disabled={disabled} style={style} className={`${styles['hello-btn']} ${styles[buttonStyle]} ${styles[buttonHoverStyle]} ${showLoader ? styles['hello-btn-loader'] : ''}`}>
            {label}
         </button>
     )
 }
 
-function LoginBaseButton({ label, scope, targetURI, providerHint }: LoginButtonProps) {
+function LoginBaseButton(props: LoginButtonProps) {
+    const { scope, targetURI, providerHint } = props
+
     const [clicked, setClicked] = useState(false)
     const { push } = useRouter()
 
@@ -51,7 +52,7 @@ function LoginBaseButton({ label, scope, targetURI, providerHint }: LoginButtonP
         push(loginApiRoute + "&" + params.toString())
     }
 
-    return <BaseButton label={label} onClick={login} disabled={clicked} showLoader={clicked} />
+    return <BaseButton {...props} onClick={login} disabled={clicked} showLoader={clicked} />
 }
 
 export function ContinueButton(props: LoginButtonProps) {
@@ -62,7 +63,8 @@ export function LoginButton(props: LoginButtonProps) {
     return <LoginBaseButton {...props} label="ō&nbsp;&nbsp;&nbsp;Log in with Hellō" />
 }
 
-function UpdateBaseButton({ label, updateScope, targetURI, providerHint }: UpdateButtonProps) {
+function UpdateBaseButton(props: UpdateButtonProps) {
+    let { label, updateScope, targetURI, providerHint } = props
     const [clicked, setClicked] = useState(false)
     const { push } = useRouter()
 
@@ -82,7 +84,7 @@ function UpdateBaseButton({ label, updateScope, targetURI, providerHint }: Updat
         push(loginApiRoute + "&" + params.toString())
     }
 
-    return <BaseButton label={label} onClick={update} disabled={clicked} showLoader={clicked} style={{width: '270px'}} />
+    return <BaseButton {...props} onClick={update} disabled={clicked} showLoader={clicked} style={{width: '270px'}} />
 }
 
 export function UpdateEmailButton(props: UpdateButtonProps) {

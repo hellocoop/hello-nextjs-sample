@@ -21,12 +21,12 @@ export default function Profile({ user }) {
                     {/* Use next/image */}
                     <img src={picture} alt={name} className="h-24 rounded-full bg-gray-700" />
                     {/* [ ō Update Picture with Hellō ] */}
-                    <UpdatePictureButton /> 
+                    <UpdatePictureButton buttonStyle="hello-btn-black-and-static" /> 
                 </ProfileSection>
                 <ProfileSection>
                     <h2 className="text-xl text-left">{email}</h2>
                     {/* [ ō Update Email with Hellō ] */}
-                    <UpdateEmailButton /> 
+                    <UpdateEmailButton buttonStyle="hello-btn-black-and-static" /> 
                 </ProfileSection>
             </div>
         </section>

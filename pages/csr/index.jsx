@@ -14,7 +14,7 @@ export default function Home() {
         <LoggedOut>
             <Prompt/>
             {/* [ ō Continue with Hellō ] */}   
-            <ContinueButton targetURI="/csr" /> 
+            <ContinueButton targetURI="/csr" buttonStyle="hello-btn-black-and-static" buttonHoverStyle="hello-btn-hover-flare" /> 
         </LoggedOut>
         <Info/>
       </Layout>
