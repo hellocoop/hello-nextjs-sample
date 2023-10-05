@@ -16,8 +16,8 @@ To run locally, you will need:
 
 ## 2\. Clone your fork to your local machine
 
-```
-git clone https://github.com/<YOUR_ACCUONT>/hello-nextjs-starter
+```sh
+git clone https://github.com/<YOUR_ACCOUNT>/hello-nextjs-starter
 ```
 
 ## 3\. Install, setup, commit, push and run!
@@ -34,14 +34,14 @@ npm run dev                    # start the local dev environment
 
 Open <http://localhost:3000> (assuming port 3000 was free)
 
-### 4\. Deploy to Vercel and open your deployment
+## 4\. Deploy to Vercel and open your deployment
 
 You will need:
 
 - a [Vercel](https://vercel.com) account linked to your GitHub account
 - Vercel CLI that is logged into your Vercel account 
 
-```
+```sh
 # commands to install and login
 npm install -g vercel
 vercel login
@@ -49,7 +49,7 @@ vercel login
 
 These commands will build and deploy your repo to Vercel and then load the deployed site:
 
-```
+```sh
 DEPLOYMENT=$(vercel --yes)     # deploy to Vercel with defaults
 npx open-cli $DEPLOYMENT       # open deployment in browser
 ```
