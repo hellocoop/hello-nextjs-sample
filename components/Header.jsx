@@ -38,12 +38,12 @@ export default function Header({name, email, picture}) {
                         </button>
                         {menu && (
                             <>
-                                <nav className="absolute top-10 bg-[#303030] px-6 py-2 flex flex-col items-end md:w-3/4 z-20 text-[#d4d4d4]">
+                                <nav className="absolute top-10 bg-[#303030] px-6 py-2 flex flex-col items-end md:w-3/4 z-40 text-[#d4d4d4]">
                                     <span className="md:hidden opacity-60 py-2">{email}</span>
                                     {!["/ssr/profile", "/profile"].includes(pathname) && <Link href={isSSRPage ? "/ssr/profile" : "/profile"} className="py-2 hover:underline">Profile</Link>}
                                     <Link href={isSSRPage ? `${logOutRoute}&target_uri=/ssr` : logOutRoute} className="py-2 hover:underline">Log Out</Link>
                                 </nav>
-                                <span onClick={()=>setMenu(false)} className="h-screen w-screen left-0 fixed z-10 top-12 bg-black bg-opacity-80"></span>
+                                <span onClick={()=>setMenu(false)} className="h-screen w-screen left-0 fixed z-30 top-12 bg-black bg-opacity-80"></span>
                             </>
                         )}
                     </div>
