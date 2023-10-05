@@ -1,4 +1,4 @@
-import { ContinueButton, LoggedIn, LoggedOut, HelloProvider } from "@/hellocoop-nextjs"
+import { ContinueButton, LoggedIn, LoggedOut, HelloProvider } from "@hellocoop/nextjs"
 import Layout from "../components/Layout"
 import Hero from "@/components/Hero"
 import Prompt from "@/components/Prompt"
@@ -23,5 +23,5 @@ export default function Home({user}) {
     )
   }
   
-  export { getServerSideProps } from "@/hellocoop-nextjs"
+  export { getServerSideProps } from "@hellocoop/nextjs"
   

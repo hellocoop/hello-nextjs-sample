@@ -1,4 +1,4 @@
-import { getUser, UpdateEmailButton, UpdatePictureButton,  } from "@/hellocoop-nextjs"
+import { getUser, UpdatePictureButton } from "@hellocoop/nextjs"
 
 const ProfileSection = ({children}) => {
     return (

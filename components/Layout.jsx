@@ -1,7 +1,6 @@
 import Link from "next/link"
-import { getUser } from '@/hellocoop-nextjs'
+import { getUser, LoggedIn, logOutRoute } from '@hellocoop/nextjs'
 import { useEffect, useState } from "react"
-import { LoggedIn, logOutRoute } from "@/hellocoop-nextjs"
 import { useRouter } from "next/router"
 
 export default function Layout({user,children}) {

@@ -1,6 +1,6 @@
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
-import { getUser} from '@/hellocoop-nextjs'
+import { getUser} from '@hellocoop/nextjs'
 
 export default function Hero({user}) {
     const {name} = getUser(user)
