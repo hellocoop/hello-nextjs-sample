@@ -1,7 +1,6 @@
 import { useUser, HelloProvider, LoggedIn } from "@/hellocoop-nextjs"
 import Layout from "@/components/Layout"
 import ProfileContainer from "@/components/ProfileContainer"
-import ProfileSection from "@/components/ProfileSection"
 
 export default function Profile(){
     const user = useUser()
