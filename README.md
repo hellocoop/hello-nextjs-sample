@@ -16,7 +16,9 @@ To run locally, you will need:
 
 ## 2\. Clone your fork to your local machine
 [How to clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-Open a terminal on your machine, and run this command replacing <YOUR_ACCOUNT> with your GitHub handle
+
+Open a terminal on your machine, and run this command replacing `<YOUR_ACCOUNT>` with your GitHub handle
+
 ```sh
 git clone https://github.com/<YOUR_ACCOUNT>/hello-nextjs-starter
 ```
