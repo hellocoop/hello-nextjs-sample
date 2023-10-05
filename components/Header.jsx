@@ -1,15 +1,12 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import Image from "next/image"
-import { LoggedIn, logOutRoute, useUser } from "@/hellocoop-nextjs"
+import { LoggedIn, logOutRoute } from "@/hellocoop-nextjs"
 import { useRouter } from "next/router"
 
-export default function Header() {
+export default function Header({name, email, picture}) {
     const router = useRouter()
     const pathname = router.pathname
     const isSSRPage = router.pathname.startsWith("/ssr")
-
-    const user = useUser()
     
     const [ menu, setMenu ] = useState(false)
 
@@ -33,8 +30,8 @@ export default function Header() {
                     <div className="flex justify-end relative">
                         <button onClick={()=>setMenu(!menu)} className="flex items-center space-x-2 text-[#d4d4d4] hover:bg-[#505050] py-1 px-2 rounded-md">
                             {/* Use next/image */}
-                            <img src={user?.picture} alt={user?.name} className="rounded-full h-7" />
-                            <span className="hidden md:block">{user?.email}</span>
+                            <img src={picture} alt={name} className="rounded-full h-7" />
+                            <span className="hidden md:block">{email}</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className={`h-4 ${menu ? "rotate-180" : ""}`}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                             </svg>
@@ -42,7 +39,7 @@ export default function Header() {
                         {menu && (
                             <>
                                 <nav className="absolute top-10 bg-[#303030] px-6 py-2 flex flex-col items-end md:w-3/4 z-20 text-[#d4d4d4]">
-                                    <span className="md:hidden opacity-60 py-2">{user?.email}</span>
+                                    <span className="md:hidden opacity-60 py-2">{email}</span>
                                     {!["/ssr/profile", "/profile"].includes(pathname) && <Link href={isSSRPage ? "/ssr/profile" : "/profile"} className="py-2 hover:underline">Profile</Link>}
                                     <Link href={isSSRPage ? `${logOutRoute}&target_uri=/ssr` : logOutRoute} className="py-2 hover:underline">Log Out</Link>
                                 </nav>
