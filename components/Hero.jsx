@@ -25,7 +25,10 @@ export default function Hero({isLoggedIn, name}) {
             {isLoggedIn && (
                 <>
                     <section className="relative h-64 bg-no-repeat bg-center bg-contain flex items-center justify-center text-[4vw] xs:text-2xl font-mono my-16">
-                        <span className="z-20" style={{mixBlendMode: "difference"}}>Say Hellō to a Co-operative World<span className="blinker"></span></span>
+                        <p className="z-20 inline-flex items-center" style={{mixBlendMode: "difference"}}>
+                          <span>Say Hellō to a Co-operative World</span>
+                          <span className="blinker"></span>
+                        </p>
                         <Globe/>
                     </section>
 
