@@ -7,7 +7,7 @@ See a deployed version  at [https://hello-nextjs-starter.vercel.appss](https://h
 To run locally, you will need:
 
 - [nodejs 18+](https://nodejs.org/en/download)
-- [git](https://github.com/git-guides/install-githttps://github.com/git-guides/install-git)
+- [git](https://github.com/git-guides/install-git)
 - A [GitHub](https://github.com) account
 
 ## 1\. Fork this repository to your GitHub account
@@ -15,10 +15,12 @@ To run locally, you will need:
 <https://github.com/hellocoop/hello-nextjs-starter/fork>
 
 ## 2\. Clone your fork to your local machine
-
+[How to clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+Open a terminal on your machine, and run this command replacing <YOUR_ACCOUNT> with your GitHub handle
 ```sh
 git clone https://github.com/<YOUR_ACCOUNT>/hello-nextjs-starter
 ```
+This will create a `hello-nextjs-starter` directory on your machine with the contents of this repo.
 
 ## 3\. Install, setup, commit, push and run!
 
