@@ -3,7 +3,7 @@ import Layout from "@/components/Layout"
 import ProfileContainer from "@/components/ProfileContainer"
 import ProfileSection from "@/components/ProfileSection"
 
-export default function ssrProfile(props){
+export default function sspProfile(props){
     
     console.log('ssrPage:props',JSON.stringify(props,null,4))
 
