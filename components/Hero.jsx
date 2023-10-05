@@ -49,7 +49,7 @@ function Globe() {
       height: 375 * 2,
       phi: 0,
       theta: 0,
-      dark: 1,
+      dark: 1, //TBD: light mode
       diffuse: 1.2,
       mapSamples: 16000,
       mapBrightness: 6,
