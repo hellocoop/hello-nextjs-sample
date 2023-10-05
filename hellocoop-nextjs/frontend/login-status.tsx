@@ -1,20 +1,14 @@
-import useUser from "./user"
-import { useHelloProviderContext } from "./provider"
+import { getUser } from "./user"
+import type { User } from '../lib/user'
 
-export function LoggedIn({ user, children }: any) { //TBD type: any
-    const u = user || useHelloProviderContext() || useUser()
-
-    console.log('LoggedIn:u:',JSON.stringify(u,null,4))
-
+export function LoggedIn({ user, children }: {user:User, children:any}) { //TBD type: any
+    const u = getUser(user)
     if (u?.isLoggedIn)
         return children
 }
 
-export function LoggedOut({ user, children }: any) { //TBD type: any
-    const u = user || useHelloProviderContext() || useUser()
-    
-    console.log('LoggedOut:u:',JSON.stringify(u,null,4))
-
+export function LoggedOut({ user, children }: {user:User, children:any}) { //TBD type: any
+    const u = getUser(user)
     if (!u?.isLoggedIn)
         return children
 }

@@ -1,7 +1,9 @@
 import Header from "./Header"
 import Footer from "./Footer"
+import { getUser } from '@/hellocoop-nextjs'
 
-export default function Layout({children, email, name, picture}) {
+export default function Layout({user,children}) {
+    const {email, name, picture} = getUser(user)
     return (
         <>
             <Header email={email} name={name} picture={picture}/>

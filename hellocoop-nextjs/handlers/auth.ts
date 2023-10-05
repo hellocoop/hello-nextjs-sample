@@ -33,7 +33,7 @@ if (!config.clientId) {
 export const handleAuth = translateHandlerErrors((req: NextApiRequest, res: NextApiResponse) => {
         const { query } = req
 
-console.log({query})     
+// console.log({query})     
 
         if (query.profile) {
             if (configured)

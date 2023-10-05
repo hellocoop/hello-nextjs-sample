@@ -1,8 +1,8 @@
 export { handleAuth } from './handlers/auth'
-export { getUser, getServerSideProps } from './lib/user'
+export { getSessionUser, getServerSideProps } from './lib/user'
 export { withHelloApiRoute } from './lib/api'
 
-export { default as useUser } from './frontend/user'
+export * from './frontend/user'
 export * from './frontend/provider'
 export * from './frontend/buttons'
 export * from './frontend/login-status'

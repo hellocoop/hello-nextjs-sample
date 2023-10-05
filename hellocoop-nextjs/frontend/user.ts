@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import useSWR from 'swr'
+import { useHelloProviderContext } from "./provider"
 
 import { userApiRoute, defaultTargetRoute } from '../lib/config'
 import type { User } from '../lib/user'
@@ -18,5 +19,13 @@ export default function useUser(): User | undefined {
     //     }
     // }, [user, pathname])
 
+    return user
+}
+
+export function getUser( passedUser: User): User {
+
+// TBD reset context if passedUser
+
+    const user = passedUser || useHelloProviderContext() || useUser()
     return user
 }

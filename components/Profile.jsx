@@ -1,4 +1,4 @@
-import { UpdateEmailButton, UpdatePictureButton } from "@/hellocoop-nextjs"
+import { getUser, UpdateEmailButton, UpdatePictureButton,  } from "@/hellocoop-nextjs"
 
 const ProfileSection = ({children}) => {
     return (
@@ -8,7 +8,8 @@ const ProfileSection = ({children}) => {
     )
 }
 
-export default function ProfileContainer({ heading, name, email, picture }) {
+export default function Profile({ user }) {
+    const { heading, name, email, picture } = getUser(user)
     return (
         <section className="flex flex-col items-start">
             <h1 className="text-2xl font-medium">{heading}</h1>

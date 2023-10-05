@@ -24,7 +24,7 @@ const LinkIcon = () => (
     </svg>
 )
 
-export default function Content() {
+export default function Info() {
     return (
         <section>
             <hr className="border-black dark:border-white opacity-25 my-10"/>

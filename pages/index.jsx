@@ -1,22 +1,26 @@
-import { ContinueButton, LoggedOut, useUser, HelloProvider } from "@/hellocoop-nextjs"
+import { ContinueButton, LoggedIn, LoggedOut, HelloProvider } from "@/hellocoop-nextjs"
 import Layout from "../components/Layout"
 import Hero from "@/components/Hero"
-import Content from "@/components/Content"
+import Prompt from "@/components/Prompt"
+import Info from "@/components/Info"
 
-export default function Home() {
-    const user = useUser()
+export default function Home({user}) {  
     return (
-        <HelloProvider user={user}>
-            <Layout name={user?.name} email={user?.email} picture={user?.picture}>
-                <Hero isLoggedIn={user?.isLoggedIn} name={user?.name}/>
-                    
-                <LoggedOut>
-                    {/* Continue with Hellō button */}
-                    <ContinueButton/> 
-                </LoggedOut>
-
-                <Content/>
-            </Layout>
-        </HelloProvider>
+      <HelloProvider user={user}>
+        <Layout>
+          <LoggedIn>
+              <Hero/>
+          </LoggedIn>
+          <LoggedOut>
+              <Prompt/>
+              {/* [ ō Continue with Hellō ] */}
+              <ContinueButton/> 
+          </LoggedOut>
+          <Info/>
+        </Layout>
+      </HelloProvider>
     )
-}
+  }
+  
+  export { getServerSideProps } from "@/hellocoop-nextjs"
+  

@@ -5,7 +5,7 @@ import * as config from '../lib/config'
 
 var redirectURIs: Record<string, any> = {}
 
-var callCount = 0 // DEBUG
+// var callCount = 0 // DEBUG
 
 const handleLogin = async (req: NextApiRequest, res: NextApiResponse) => {
     const { provider_hint: providerParam, scope: scopeParam, target_uri, redirect_uri } = req.query
@@ -15,8 +15,8 @@ const handleLogin = async (req: NextApiRequest, res: NextApiResponse) => {
         return
     }
 
-callCount++
-console.log('login called:',callCount)
+// callCount++
+// console.log('login called:',callCount)
 
     let redirectURI = config.redirectURI as string
     let host = req.headers?.host as string

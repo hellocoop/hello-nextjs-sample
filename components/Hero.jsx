@@ -1,39 +1,20 @@
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
+import { getUser} from '@/hellocoop-nextjs'
 
-export default function Hero({isLoggedIn, name}) {
+export default function Hero({user}) {
+    const {name} = getUser(user)
     return (
         <section>
             <h1 className="text-[5vw] xs:text-2xl italic">Add login and registration in seconds</h1>
-            <div className="my-6">
-                {!isLoggedIn && <h2 className="text-[12vw] xs:text-[3.42rem]">Try out the demo</h2>}
-                
-            </div>
-            <div className="text-left mx-auto w-64 mb-6 pl-4">
-                {!isLoggedIn && (
-                    <>
-                        <h3>You will be prompted to provide:</h3>
-                        <ul className="list-disc list-inside">
-                            <li className="font-semibold">Name</li>
-                            <li className="font-semibold">Verified Email</li>
-                            <li className="font-semibold">Profile Picture</li>
-                        </ul>
-                    </>
-                )}
-            </div>
-            {isLoggedIn && (
-                <>
-                    <section className="relative h-64 bg-no-repeat bg-center bg-contain flex items-center justify-center my-16">
-                        <p className="z-20 inline-flex items-center text-[4vw] xs:text-2xl font-mono" style={{mixBlendMode: "difference"}}>
-                          <span className="text-gray">Say Hellō to a Co-operative World</span>
-                          <span className="blinker"></span>
-                        </p>
-                        <Globe/>
-                    </section>
-
-                    <h1 className="text-2xl">{name}</h1>
-                </>
-            )}
+            <section className="relative h-64 bg-no-repeat bg-center bg-contain flex items-center justify-center my-16">
+                <p className="z-20 inline-flex items-center text-[4vw] xs:text-2xl font-mono" style={{mixBlendMode: "difference"}}>
+                  <span className="text-gray">Say Hellō to a Co-operative World</span>
+                  <span className="blinker"></span>
+                </p>
+                <Globe/>
+            </section>
+            <h1 className="text-2xl">{name}</h1>
         </section>
     )
 }
