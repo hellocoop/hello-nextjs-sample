@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        charcoal: '#303030'
+        charcoal: '#303030',
+        gray: '#d4d4d4'
       },
       screens: {
         'xs': '545px',

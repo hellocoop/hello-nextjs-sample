@@ -1,6 +1,5 @@
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 
 export default function Hero({isLoggedIn, name}) {
     return (
@@ -24,9 +23,9 @@ export default function Hero({isLoggedIn, name}) {
             </div>
             {isLoggedIn && (
                 <>
-                    <section className="relative h-64 bg-no-repeat bg-center bg-contain flex items-center justify-center text-[4vw] xs:text-2xl font-mono my-16">
-                        <p className="z-20 inline-flex items-center" style={{mixBlendMode: "difference"}}>
-                          <span className="text-[#d4d4d4]">Say Hellō to a Co-operative World</span>
+                    <section className="relative h-64 bg-no-repeat bg-center bg-contain flex items-center justify-center my-16">
+                        <p className="z-20 inline-flex items-center text-[4vw] xs:text-2xl font-mono" style={{mixBlendMode: "difference"}}>
+                          <span className="text-gray">Say Hellō to a Co-operative World</span>
                           <span className="blinker"></span>
                         </p>
                         <Globe/>

@@ -16,19 +16,19 @@ export default function Header({name, email, picture}) {
     }, [pathname])
 
     return (
-        <header className="h-12 w-full bg-[#303030] flex-shrink-0 px-4">
+        <header className="h-12 w-full bg-charcoal flex-shrink-0 px-4">
             <div className="max-w-4xl h-full mx-auto flex items-center justify-between">
                 <Link href={isSSRPage ? "/ssr" : "/"}>
                     <span className="inline-flex items-center space-x-2">
                         <img src="/hello.svg" alt="Hello" className="h-4" />
                         <img src="/next.svg" alt="Next.js" className="h-4 pl-1"/>
-                        <span className="text-2xl -mt-0.5 italic text-[#d4d4d4]">Starter</span>
+                        <span className="text-2xl -mt-0.5 italic text-gray">Starter</span>
                     </span>
                 </Link>
 
                 <LoggedIn>
                     <div className="flex justify-end relative">
-                        <button onClick={()=>setMenu(!menu)} className="flex items-center space-x-2 text-[#d4d4d4] hover:bg-[#505050] py-1 px-2 rounded-md">
+                        <button onClick={()=>setMenu(!menu)} className="flex items-center space-x-2 text-gray hover:bg-[#505050] py-1 px-2 rounded-md">
                             {/* Use next/image */}
                             <img src={picture} alt={name} className="rounded-full h-7" />
                             <span className="hidden md:block">{email}</span>
@@ -38,7 +38,7 @@ export default function Header({name, email, picture}) {
                         </button>
                         {menu && (
                             <>
-                                <nav className="absolute top-10 bg-[#303030] px-6 py-2 flex flex-col items-end md:w-3/4 z-40 text-[#d4d4d4]">
+                                <nav className="absolute top-10 bg-charcoal px-6 py-2 flex flex-col items-end md:w-3/4 z-40 text-gray">
                                     <span className="md:hidden opacity-60 py-2">{email}</span>
                                     {!["/ssr/profile", "/profile"].includes(pathname) && <Link href={isSSRPage ? "/ssr/profile" : "/profile"} className="py-2 hover:underline">Profile</Link>}
                                     <Link href={isSSRPage ? `${logOutRoute}&target_uri=/ssr` : logOutRoute} className="py-2 hover:underline">Log Out</Link>
