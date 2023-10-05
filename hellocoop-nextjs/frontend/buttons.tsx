@@ -4,16 +4,21 @@ import styles from './buttons.module.css'
 
 import { loginApiRoute } from '../lib/config'
 
+export type Color = "black" | "white"
+export type Theme = "ignore-light" | "ignore-dark" | "aware-invert" | "aware-static"
+export type Hover = "pop" | "glow" | "flare" | "none"
+
 export interface BaseButtonProps {
     label?: string
     onClick?: any //TBD type: any
     style?: any //TBD type: any
     disabled?: boolean
     showLoader?: boolean
-    buttonStyle?: string
-    buttonHoverStyle?: string
-    providerHint?: string
+    color?: Color
+    theme?: Theme
+    hover?: Hover
     targetURI?: string
+    providerHint?: string
 }
 
 
@@ -25,9 +30,32 @@ export interface UpdateButtonProps extends BaseButtonProps {
     updateScope?: "email" | "picture"
 }
 
-function BaseButton({ label, onClick, disabled, showLoader, style, buttonStyle = "", buttonHoverStyle = "" } : BaseButtonProps) {
+const CLASS_MAPPING = {
+    black: {
+        "ignore-light": "",
+        "ignore-dark": "hello-btn-black-on-dark",
+        "aware-invert": "hello-btn-black-and-invert",
+        "aware-static": "hello-btn-black-and-static"
+    },
+    white: {
+        "ignore-light": "hello-btn-white-on-light",
+        "ignore-dark": "hello-btn-white-on-dark",
+        "aware-invert": "hello-btn-white-and-invert",
+        "aware-static": "hello-btn-white-and-static"
+    },
+}
+
+const HOVER_MAPPING = {
+    "pop": "",
+    "glow": "hello-btn-hover-glow",
+    "flare": "hello-btn-hover-flare",
+    "none": "hello-btn-hover-none"
+}
+
+function BaseButton({ label, onClick, disabled, showLoader, style, color = "black", theme = "ignore-light", hover = "pop" } : BaseButtonProps) {
+    const helloBtnClass = CLASS_MAPPING[color]?.[theme]
     return (
-        <button onClick={onClick} disabled={disabled} style={style} className={`${styles['hello-btn']} ${styles[buttonStyle]} ${styles[buttonHoverStyle]} ${showLoader ? styles['hello-btn-loader'] : ''}`}>
+        <button onClick={onClick} disabled={disabled} style={style} className={`${styles['hello-btn']} ${styles[helloBtnClass]} ${styles[HOVER_MAPPING[hover]]} ${showLoader ? styles['hello-btn-loader'] : ''}`}>
            {label}
         </button>
     )

@@ -14,7 +14,8 @@ export default function Home({user}) {
           <LoggedOut>
               <Prompt/>
               {/* [ ō Continue with Hellō ] */}
-              <ContinueButton buttonStyle="hello-btn-black-and-static" buttonHoverStyle="hello-btn-hover-flare" /> 
+              <ContinueButton theme="aware-static" hover="flare" providerHint="google github gitlab" />
+              {/* Default <ContinueButton color="black" theme="ignore-light" hover="pop" />  */}
           </LoggedOut>
           <Info/>
         </Layout>
