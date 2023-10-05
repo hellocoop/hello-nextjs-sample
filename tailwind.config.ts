@@ -8,8 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        charcoal: '#303030'
+      },
       screens: {
-        'xs': '475px',
+        'xs': '545px',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
