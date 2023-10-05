@@ -7,7 +7,7 @@ export default function ssrProfile(props){
     
     console.log('ssrPage:props',JSON.stringify(props,null,4))
 
-    const user = props
+    const user = props.user
 
     return (
         <Layout>
