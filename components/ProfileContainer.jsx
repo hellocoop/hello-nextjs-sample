@@ -19,12 +19,12 @@ export default function ProfileContainer({ heading, name, email, picture }) {
                 <ProfileSection>
                     {/* Use next/image */}
                     <img src={picture} alt={name} className="h-24 rounded-full bg-gray-700" />
-                    {/* Update Pictutre with Hellō button */}
+                    {/* [ ō Update Picture with Hellō ] */}
                     <UpdatePictureButton /> 
                 </ProfileSection>
                 <ProfileSection>
                     <h2 className="text-xl text-left">{email}</h2>
-                    {/* Update Email with Hellō button */}
+                    {/* [ ō Update Email with Hellō ] */}
                     <UpdateEmailButton /> 
                 </ProfileSection>
             </div>
