@@ -23,7 +23,7 @@ export default function Layout({user,children}) {
                     </div>
                     <span className="block text-center mt-6">
                         <Link href={otherVersion} className="hover:underline">
-                            {isCSFPage ? "Server Side Props" : "Client Side Fetch"} Version
+                            Switch to {isCSFPage ? "Server Side Props" : "Client Side Fetch"} Version
                         </Link>
                     </span>
                 </main>
