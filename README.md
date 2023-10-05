@@ -1,50 +1,67 @@
 # Hellō Next.js Starter
 
-This is a starter application for the Hellō Next.js SDK [@hellocoop/nextjs](https://www.npmjs.com/package/@hellocoop/nextjs) 
+This is a starter application for the Hellō Next.js SDK [@hellocoop/nextjs](https://www.npmjs.com/package/@hellocoop/nextjs)
 
-See a live version of the starter app at <https://hello-nextjs-starter.vercel.app>
+See a deployed version  at [https://hello-nextjs-starter.vercel.appss](https://hello-nextjs-starter.vercel.app)
 
-## Getting started Tl;dr:
-You will need: 
-- nodejs 18+
-- git
+To run locally, you will need:
+
+- [nodejs 18+](https://nodejs.org/en/download)
+- [git](https://github.com/git-guides/install-githttps://github.com/git-guides/install-git)
+- A [GitHub](https://github.com) account
+
+## 1\. Fork this repository to your GitHub account
+
+<https://github.com/hellocoop/hello-nextjs-starter/fork>
+
+## 2\. Clone your fork to your local machine
+
 ```
-git clone https://github.com/hellocoop/hello-nextjs-starter.git
-cd hello-nextjs-starter
-npm install
-npm run quickstart       # creates and adds Hellō config to next.config.js
-npm run dev              # starts the server
+git clone https://github.com/<YOUR_ACCUONT>/hello-nextjs-starter
 ```
 
-Then open <http://localhost:3000> (assuming port 3000 was free)
+## 3\. Install, setup, commit, push and run!
 
-You will be running a local node server configured with Hellō is less than a minute.
+```
+cd hello-nextjs-start          # change to project directory
+npm install                    # intall the node modules
+npm run quickstart             # launch the Hellō Quickstart web app to register your app
+git add *                      # add in the package-lock.json that was generated
+git commit -a -m"quickstart"   # commit the environment variables for your app
+git push origin                # push the changes up to your repo for future deployment
+npm run dev                    # start the local dev environment
+```
 
-## Deploy to Vercel
+Open <http://localhost:3000> (assuming port 3000 was free)
 
-### Create your own fork of hello-nextjs-starter
+### 4\. Deploy to Vercel and open your deployment
+
 You will need:
-- git
-- gh 
-- Vercel or Netlify account
+
+- a [Vercel](https://vercel.com) account linked to your GitHub account
+- Vercel CLI that is logged into your Vercel account 
+
 ```
-git remote rename origin upstream
-gh repo create --source ./ --private
-git add *
-git commit -a -m"quickstart"
-git push origin
+# commands to install and login
+npm install -g vercel
+vercel login
 ```
 
-### Deploy to Vercel
+These commands will build and deploy your repo to Vercel and then load the deployed site:
 
-Login to Vercel, link your GitHub (or other) account, and then select your `hello-nextjs-starter` repo and deploy it.
+```
+DEPLOYMENT=$(vercel --yes)     # deploy to Vercel with defaults
+npx open-cli $DEPLOYMENT       # open deployment in browser
+```
 
-No configuration needed at Vercel! 
+No otther configuration needed at Vercel!
 
 The first time you login to your deployed app, you will be prompted to add the Redirect URI to your app at the [Hello Developer Console](https://console.hello.coop/). For development deployments, add to your Development Redirect URIs, for production or deployments you want others to access, add to your Production Redirect URIs.
 
 ---
+
 ## Learn More
+
 - [Hellō Next.js SDK](https://www.npmjs.com/package/@hellocoop/nextjs)
 - [Hellō Quickstart for Next.js](https://www.npmjs.com/package/@hellocoop/quickstart-nextjs)
 - [Hellō Documentation](https://www.hello.dev/documentation)
