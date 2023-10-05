@@ -1,14 +1,14 @@
+import Link from "next/link"
 import { getUser } from '@/hellocoop-nextjs'
 import { useEffect, useState } from "react"
-import Link from "next/link"
 import { LoggedIn, logOutRoute } from "@/hellocoop-nextjs"
 import { useRouter } from "next/router"
 
 export default function Layout({user,children}) {
-    const {email, name, picture} = getUser(user)
+    const u = getUser(user)
     return (
         <>
-            <Header email={email} name={name} picture={picture}/>
+            <Header email={u?.email} name={u?.name} picture={u?.picture}/>
                 <main className="py-10 px-4 text-center flex-1 overflow-auto">
                     <div className="max-w-4xl mx-auto">
                         {children}

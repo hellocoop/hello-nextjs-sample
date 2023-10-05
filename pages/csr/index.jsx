@@ -1,5 +1,5 @@
 import { ContinueButton, LoggedIn, LoggedOut, HelloProvider } from "@/hellocoop-nextjs"
-import Layout from "../components/Layout"
+import Layout from "@/components/Layout"
 import Hero from "@/components/Hero"
 import Prompt from "@/components/Prompt"
 import Info from "@/components/Info"
