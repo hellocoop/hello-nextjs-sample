@@ -1,4 +1,4 @@
-import { getUser, UpdatePictureButton } from "@hellocoop/nextjs"
+import { getUser, UpdatePictureButton, UpdateEmailButton } from "@hellocoop/nextjs"
 
 const ProfileSection = ({children}) => {
     return (
@@ -26,9 +26,9 @@ export default function Profile({ user }) {
                 </ProfileSection>
                 <ProfileSection>
                     <h2 className="text-xl text-left">{email}</h2>
-                    {/* [ ō Update Picture with Hellō ] */}
-                    <UpdatePictureButton theme="aware-static" />
-                    {/* Default <UpdatePictureButton color="black" theme="ignore-light" hover="pop" />  */}
+                    {/* [ ō Update Email with Hellō ] */}
+                    <UpdateEmailButton theme="aware-static" />
+                    {/* Default <UpdateEmailButton color="black" theme="ignore-light" hover="pop" />  */}
                 </ProfileSection>
             </div>
         </section>
