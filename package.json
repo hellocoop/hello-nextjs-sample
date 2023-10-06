@@ -11,8 +11,6 @@
     },
     "dependencies": {
         "@hellocoop/nextjs": "latest",
-        "@hellocoop/utils": "latest",
-        "cobe": "^0.6.3",
         "next": "^13.4.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
@@ -25,6 +23,7 @@
         "autoprefixer": "10.4.15",
         "eslint": "8.49.0",
         "eslint-config-next": "^13.5.1",
+        "open-cli": "^7.2.0",
         "postcss": "8.4.29",
         "tailwindcss": "3.3.3",
         "typescript": "5.2.2"
