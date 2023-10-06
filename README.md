@@ -27,7 +27,6 @@ This will create a `hello-nextjs-starter` directory on your machine with the con
 ## 3\. Install, setup, commit, push, and run!
 
 ```sh
-# commands to install, setup, commit, push, and run!
 cd hello-nextjs-start          # change to project directory
 npm install                    # intall the node modules
 npm run quickstart             # launch the Hellō Quickstart web app to register your app
@@ -47,9 +46,8 @@ You will need:
 - Vercel CLI that is logged into your Vercel account 
 
 ```sh
-# commands to install and login
-npm install -g vercel
-vercel login
+npm install -g vercel           # install Vercel
+vercel login                    # login and store credentials locally for CLI 
 ```
 
 These commands will build and deploy your repo to Vercel and then load the deployed site:
