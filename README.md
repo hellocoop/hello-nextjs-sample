@@ -70,6 +70,6 @@ You are able to access your app when deployed as we have enabled `https://*` Red
 
 ## Learn More
 
-- [Hellō Next.js SDK](https://www.npmjs.com/package/@hellocoop/nextjs)
+- [Hellō Next.js SDK](https://www.npmjs.com/package/@hellocoop/nextjs) NOTE - the Next.js SDK API is under development and will change
 - [Hellō Quickstart for Next.js](https://www.npmjs.com/package/@hellocoop/quickstart-nextjs)
 - [Hellō Documentation](https://www.hello.dev/documentation)
