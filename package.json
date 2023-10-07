@@ -7,7 +7,8 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "quickstart": "npx @hellocoop/quickstart-nextjs"
+        "quickstart": "npx @hellocoop/quickstart-nextjs",
+        "https": "next dev --experimental-https"
     },
     "dependencies": {
         "@hellocoop/nextjs": "latest",
