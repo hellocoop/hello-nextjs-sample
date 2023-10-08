@@ -1,6 +1,5 @@
 import { HelloAuth } from '@hellocoop/nextjs'
 const config = {
-
+// TODO - sample config
 }
-console.log({config})
 export default HelloAuth(config)
