@@ -1,9 +1,9 @@
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
-import { getAuth} from '@hellocoop/nextjs'
+import { useAuth} from '@hellocoop/nextjs'
 
-export default function Hero({auth}) {
-    const {name} = getAuth(auth)
+export default function Hero() {
+    const {name} = useAuth()
     return (
         <section>
             <h1 className="text-[5vw] xs:text-2xl italic">Add login and registration in seconds</h1>
