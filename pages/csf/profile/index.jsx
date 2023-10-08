@@ -2,9 +2,9 @@ import { LoggedIn, HelloProvider } from "@hellocoop/nextjs"
 import Layout from "@/components/Layout"
 import Profile from "@/components/Profile"
 
-export default function sspProfile({auth}){
+export default function sspProfile(){
     return (
-        <HelloProvider auth={auth}>
+        <HelloProvider>
             <Layout>
                 <LoggedIn>
                     <Profile/>
@@ -13,5 +13,3 @@ export default function sspProfile({auth}){
         </HelloProvider>
     )
 }
-
-export { getServerSideProps } from "@hellocoop/nextjs"
