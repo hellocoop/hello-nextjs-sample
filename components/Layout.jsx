@@ -1,10 +1,10 @@
 import Link from "next/link"
-import { getUser, LoggedIn, logOutRoute } from '@hellocoop/nextjs'
+import { getAuth, LoggedIn, logOutRoute } from '@hellocoop/nextjs'
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 
-export default function Layout({user,children}) {
-    const u = getUser(user)
+export default function Layout({auth,children}) {
+    const u = getAuth(auth)
     const router = useRouter()
     const pathname = router.pathname
     const isCSFPage = router.pathname.startsWith("/csf")
@@ -15,7 +15,7 @@ export default function Layout({user,children}) {
 
     return (
         <>
-            <Header user={u} isCSFPage={isCSFPage} pathname={pathname}/>
+            <Header auth={u} isCSFPage={isCSFPage} pathname={pathname}/>
                 <main className="py-10 px-4 text-center flex-1 overflow-auto">
                     <div className="max-w-4xl mx-auto">
                         {children}
@@ -31,8 +31,8 @@ export default function Layout({user,children}) {
     )
 }
 
-const Header = ({user, isCSFPage, pathname}) => {
-    const { name, email, picture } = user || {}
+const Header = ({auth, isCSFPage, pathname}) => {
+    const { name, email, picture } = auth || {}
     const [ menu, setMenu ] = useState(false)
 
     useEffect(() => {

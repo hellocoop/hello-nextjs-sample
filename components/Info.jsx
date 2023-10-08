@@ -31,8 +31,7 @@ export default function Info() {
             <p>
                 This starter app demonstrates how you can add Hellō login and registration to a Next.js app in seconds
                 with the <Link target="_blank" href="https://www.npmjs.com/package/@hellocoop/quickstart-nextjs">@hellocoop/quickstart-nextjs</Link><LinkIcon/> and <Link target="_blank" href="https://www.npmjs.com/package/@hellocoop/nextjs">@hellocoop/nextjs</Link><LinkIcon/> packages.<br/>
-                User profile data is stored in a signed and encrypted cookie using <Link target="_blank" href="https://www.npmjs.com/package/iron-session">iron-session</Link><LinkIcon/>.
-            </p>
+                User profile data is stored in a signed and encrypted cookie.</p>
             <div className="flex flex-wrap justify-between mt-10 gap-0">
                 {links.map(i => 
                     <Link href={i.link} target="_blank" key={i.link} className="link-card w-full lg:w-72 h-32 cursor-pointer">

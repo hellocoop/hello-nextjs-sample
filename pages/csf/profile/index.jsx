@@ -2,9 +2,9 @@ import { LoggedIn, HelloProvider } from "@hellocoop/nextjs"
 import Layout from "@/components/Layout"
 import Profile from "@/components/Profile"
 
-export default function sspProfile({user}){
+export default function sspProfile({auth}){
     return (
-        <HelloProvider user={user}>
+        <HelloProvider auth={auth}>
             <Layout>
                 <LoggedIn>
                     <Profile/>

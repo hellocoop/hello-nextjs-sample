@@ -1,2 +1,6 @@
+import { HelloAuth } from '@hellocoop/nextjs'
+const config = {
 
-export { handleAuth as default } from '@hellocoop/nextjs'
+}
+console.log({config})
+export default HelloAuth(config)
