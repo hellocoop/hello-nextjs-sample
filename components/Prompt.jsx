@@ -1,4 +1,3 @@
-
 export default function Prompt() {
     return (
         <section>
