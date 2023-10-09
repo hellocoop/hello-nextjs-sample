@@ -17,7 +17,7 @@ To run locally, you will need:
 ## 2\. Clone your fork to your local machine
 [How to clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-Open a terminal on your machine, and run this command replacing `<YOUR_ACCOUNT>` with your GitHub handle
+Open a terminal on your machine, and run this command replacing `<YOUR_ACCOUNT>` with your GitHub handle:
 
 ```sh
 git clone https://github.com/<YOUR_ACCOUNT>/hello-nextjs-starter
@@ -26,14 +26,16 @@ This will create a `hello-nextjs-starter` directory on your machine with the con
 
 ## 3\. Install, setup, commit, push, and run!
 
+Run these commands to start running locally:
+
 ```sh
-cd hello-nextjs-start          # change to project directory
-npm install                    # intall the node modules
-npm run quickstart             # launch the Hellō Quickstart web app to register your app
-git add *                      # add in the package-lock.json that was generated
-git commit -a -m"quickstart"   # commit the environment variables for your app
-git push origin                # push the changes up to your repo for future deployment
-npm run dev                    # start the local dev environment
+cd hello-nextjs-starter
+npm install
+npm run quickstart
+git add *
+git commit -a -m"quickstart"
+git push origin
+npm run dev
 ```
 
 Open <http://localhost:3000> (assuming port 3000 was free)
@@ -45,16 +47,18 @@ You will need:
 - A [Vercel](https://vercel.com) account linked to your GitHub account
 - Vercel CLI that is logged into your Vercel account 
 
+These commands will install Vercel and login
+
 ```sh
-npm install -g vercel           # install Vercel
-vercel login                    # login and store credentials locally for CLI 
+npm install -g vercel
+vercel login
 ```
 
 These commands will build and deploy your repo to Vercel and then load the deployed site:
 
 ```sh
-DEPLOYMENT=$(vercel --yes)     # deploy to Vercel with defaults
-npx open-cli $DEPLOYMENT       # open deployment in browser
+DEPLOYMENT=$(vercel --yes)
+npx open-cli $DEPLOYMENT
 ```
 
 No other configuration needed at Vercel!
