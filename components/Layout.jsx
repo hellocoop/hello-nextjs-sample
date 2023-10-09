@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { LoggedIn, logOutRoute, useHelloProviderContext } from '@hellocoop/nextjs'
+import { LoggedIn, logOutRoute, useAuth } from '@hellocoop/nextjs'
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 
@@ -21,7 +21,7 @@ const Header = () => {
     const router = useRouter()
     const pathname = router.pathname
 
-    const { name, email, picture } = useHelloProviderContext()
+    const { auth: {name, email, picture} } = useAuth()
     const [ menu, setMenu ] = useState(false)
 
     useEffect(() => {
