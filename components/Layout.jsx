@@ -22,6 +22,7 @@ const Header = () => {
     const pathname = router.pathname
 
     const { auth: {name, email, picture} } = useAuth()
+
     const [ menu, setMenu ] = useState(false)
 
     useEffect(() => {

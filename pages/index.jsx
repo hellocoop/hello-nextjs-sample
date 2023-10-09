@@ -6,6 +6,7 @@ import Info from "@/components/Info"
 // getServerSideProps - auth is available on page load
 
 import { ContinueButton, LoggedIn, LoggedOut, HelloProvider } from "@hellocoop/nextjs"
+
 export default function Home({auth}) {  
     return (
       <HelloProvider auth={auth}>
