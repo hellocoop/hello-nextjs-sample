@@ -4,9 +4,9 @@ import Hero from "@/components/Hero"
 import Prompt from "@/components/Prompt"
 import Info from "@/components/Info"
 
-export default function Home({user}) {  
+export default function Home({auth}) {  
     return (
-      <HelloProvider user={user}>
+      <HelloProvider auth={auth}>
         <Layout>
           <LoggedIn>
               <Hero/>
