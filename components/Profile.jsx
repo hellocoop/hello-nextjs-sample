@@ -1,4 +1,4 @@
-import { useAuth, UpdatePictureButton, UpdateEmailButton } from "@hellocoop/nextjs"
+import { UpdatePictureButton, UpdateEmailButton, useHelloProviderContext } from "@hellocoop/nextjs"
 
 const ProfileSection = ({children}) => {
     return (
@@ -9,7 +9,7 @@ const ProfileSection = ({children}) => {
 }
 
 export default function Profile() {
-    const { name, email, picture } = useAuth()
+    const { name, email, picture } = useHelloProviderContext()
     return (
         <section className="flex flex-col items-start">
             <h1 className="text-2xl font-medium">Your profile</h1>
