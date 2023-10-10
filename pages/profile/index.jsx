@@ -16,7 +16,6 @@ export default function ProfilePage({auth}){
             return replace("/")
     })
 
-
     return (
         <HelloProvider auth={auth}>
             <Layout>
