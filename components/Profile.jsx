@@ -21,7 +21,7 @@ export default function Profile() {
                     <h2 className="text-xl text-left">{name}</h2>
                 </ProfileSection>
                 <ProfileSection>
-                    <img src={picture} alt={name} className="rounded-full h-24"/>
+                    <Image src={picture} alt={name} width={96} height={96} className="rounded-full" />
                     {/* [ ō Update Picture with Hellō ] */}
                     <UpdatePictureButton theme="aware-static" />
                     {/* Default <UpdatePictureButton color="black" theme="ignore-light" hover="pop" />  */}

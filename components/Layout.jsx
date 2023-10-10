@@ -45,7 +45,7 @@ const Header = () => {
                 <LoggedIn>
                     <div className="flex justify-end relative">
                         <button onClick={()=>setMenu(!menu)} className="flex items-center space-x-2 text-gray hover:bg-[#505050] py-1 px-2 rounded-md">
-                            <img src={picture} alt={name} className="h-7 rounded-full" />
+                            <Image src={picture} alt={name} width={28} height={28} className="rounded-full" />
                             <span className="hidden md:block">{email}</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className={`h-4 ${menu ? "rotate-180" : ""}`}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
