@@ -5,13 +5,17 @@ import { useEffect } from "react"
 
 // getServerSideProps - auth is available on page load
 
-import { HelloProvider, LoggedIn } from "@hellocoop/nextjs"
+import { HelloProvider, LoggedIn, useAuth } from "@hellocoop/nextjs"
 
 export default function ProfilePage({auth}){
     const { replace } = useRouter()
+    const { isLoading, isLoggedIn } = useAuth()
 
-    if(!auth.isLoggedIn)
-        return replace("/")
+    useEffect(() => {
+        if(!isLoading && !isLoggedIn)
+            return replace("/")
+    })
+
 
     return (
         <HelloProvider auth={auth}>
