@@ -1,5 +1,6 @@
-
+import Image from "next/image"
 import { UpdatePictureButton, UpdateEmailButton, useAuth } from "@hellocoop/nextjs"
+
 
 const ProfileSection = ({children}) => {
     return (
@@ -20,8 +21,7 @@ export default function Profile() {
                     <h2 className="text-xl text-left">{name}</h2>
                 </ProfileSection>
                 <ProfileSection>
-                    {/* Use next/image */}
-                    <img src={picture} alt={name} className="h-24 rounded-full bg-gray-700" />
+                    <Image src={picture} priority={true} alt={name} width={96} height={96} className="rounded-full" />
                     {/* [ ō Update Picture with Hellō ] */}
                     <UpdatePictureButton theme="aware-static" />
                     {/* Default <UpdatePictureButton color="black" theme="ignore-light" hover="pop" />  */}

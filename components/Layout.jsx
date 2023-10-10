@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { LoggedIn, logOutRoute, useAuth } from '@hellocoop/nextjs'
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
@@ -35,8 +36,8 @@ const Header = () => {
             <div className="max-w-4xl h-full mx-auto flex items-center justify-between">
                 <Link href="/">
                     <span className="inline-flex items-center space-x-2">
-                        <img src="/hello.svg" alt="Hello" className="h-4" />
-                        <img src="/next.svg" alt="Next.js" className="h-4 pl-1"/>
+                        <Image src="/hello.svg" priority={true} alt="Hello" width={52} height={16} />
+                        <Image src="/next.svg" priority={true} alt="Next.js" width={82} height={17} />
                         <span className="text-2xl -mt-0.5 italic text-gray">Starter</span>
                     </span>
                 </Link>
@@ -44,8 +45,7 @@ const Header = () => {
                 <LoggedIn>
                     <div className="flex justify-end relative">
                         <button onClick={()=>setMenu(!menu)} className="flex items-center space-x-2 text-gray hover:bg-[#505050] py-1 px-2 rounded-md">
-                            {/* Use next/image */}
-                            <img src={picture} alt={name} className="rounded-full h-7" />
+                            <Image src={picture} priority={true} alt={name} width={28} height={28} className="rounded-full" />
                             <span className="hidden md:block">{email}</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className={`h-4 ${menu ? "rotate-180" : ""}`}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
