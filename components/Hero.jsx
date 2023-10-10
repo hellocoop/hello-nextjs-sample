@@ -32,7 +32,7 @@ function Globe() {
       height: 375 * 2,
       phi: 0,
       theta: 0,
-      dark: 1, //TBD: light mode
+      dark: 1,
       diffuse: 1.2,
       mapSamples: 16000,
       mapBrightness: 6,
@@ -59,8 +59,8 @@ function Globe() {
 
   return (
     <canvas
-        ref={canvasRef}
-        style={{ width: 375, height: 375, maxWidth: "100%", aspectRatio: 1, margin: 'auto', position: 'absolute', zIndex: 10 }}
+      ref={canvasRef}
+      style={{ width: 375, height: 375, maxWidth: "100%", aspectRatio: 1, margin: 'auto', position: 'absolute', zIndex: 10, borderRadius: '50%' }}
     />
   )
 }
