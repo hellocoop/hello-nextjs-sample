@@ -1,0 +1,33 @@
+{
+    "name": "hello-next-starter",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "quickstart": "npx @hellocoop/quickstart-nextjs",
+        "https": "next dev --experimental-https"
+    },
+    "dependencies": {
+        "@hellocoop/nextjs": "latest",
+        "@hellocoop/utils": "latest",
+        "cobe": "^0.6.3",
+        "next": "^13.4.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    },
+    "devDependencies": {
+        "@hellocoop/quickstart-nextjs": "latest",
+        "@types/node": "20.6.1",
+        "@types/react": "18.2.21",
+        "@types/react-dom": "18.2.7",
+        "autoprefixer": "10.4.15",
+        "eslint": "8.49.0",
+        "eslint-config-next": "^13.5.1",
+        "postcss": "8.4.29",
+        "tailwindcss": "3.3.3",
+        "typescript": "5.2.2"
+    }
+}
