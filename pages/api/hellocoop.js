@@ -1,5 +1,5 @@
 import { HelloAuth } from '@hellocoop/nextjs'
-import loggedIn from '@/src/loggedIn' // skeleton for logged in
+import loggedIn from '@/src/loggedin' // skeleton for logged in
 
 const config = {
     callbacks: {
