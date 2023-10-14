@@ -4,7 +4,9 @@ const nextConfig = {
       domains: [
         'cdn.hello.coop', //Hellō Generic Profile Picture
         'pictures.hello.coop',
-        'www.gravatar.com'
+        'www.gravatar.com',
+        'pictures.hello-staging.net',
+        'pictures.hello-dev.net'
       ]
     }
 }

@@ -17,7 +17,7 @@ export default function Home({auth}) {
           <LoggedOut>
               <Prompt/>
               {/* [ ō Continue with Hellō ] */}
-              <ContinueButton theme="aware-static" hover="flare" providerHint="google github gitlab" />
+              <ContinueButton theme="aware-static" hover="flare" providerHint={['google','github','gitlab']} />
               {/* Default <ContinueButton color="black" theme="ignore-light" hover="pop" />  */}
           </LoggedOut>
           <Info/>
