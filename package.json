@@ -1,13 +1,12 @@
 {
     "name": "hello-next-starter",
-    "version": "1.0.0",
-    "private": true,
+    "version": "1.0.1",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "quickstart": "npx @hellocoop/quickstart-nextjs",
+        "quickstart": "npx @hellocoop/quickstart -s -w -f '.env' -x 'Next.js Starter' -p 'github gitlab google email--' -i 'hello-nextjs-starter'",
         "https": "next dev --experimental-https"
     },
     "dependencies": {
@@ -19,7 +18,7 @@
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
-        "@hellocoop/quickstart-nextjs": "latest",
+        "@hellocoop/quickstart": "latest",
         "@types/node": "20.6.1",
         "@types/react": "18.2.21",
         "@types/react-dom": "18.2.7",
