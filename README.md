@@ -2,6 +2,8 @@
 
 This is a starter application for the Hellō Next.js SDK [@hellocoop/nextjs](https://www.npmjs.com/package/@hellocoop/nextjs)
 
+You can have this app running fully configured on localhost in a minute, and then deploy to Vercel fully configured a minute later.
+
 See a deployed version  at [https://hello-nextjs-starter.vercel.appss](https://hello-nextjs-starter.vercel.app)
 
 To run locally, you will need:
