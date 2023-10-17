@@ -42,7 +42,7 @@ Open <http://localhost:3000> (assuming port 3000 was free)
 
 You will need:
 
-- A [Vercel](https://vercel.com) account linked to your GitHub account so it can access the repo you just created
+- A [Vercel](https://vercel.com) account *linked to your GitHub account* so it can access the repo you just created
 - Vercel CLI that is logged into your Vercel account 
 
 These commands will install the Vercel CLI and login
