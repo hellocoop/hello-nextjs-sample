@@ -54,7 +54,7 @@ vercel login
 These commands will configure, build, and deploy your repo to Vercel and then load the deployed site:
 
 ```sh
-vercel link hello-nextjs-starter
+vercel link --yes
 npm run config:vercel
 DEPLOYMENT=$(vercel --yes)
 npx open-cli $DEPLOYMENT
