@@ -32,9 +32,6 @@ Run these commands to start running locally:
 cd hello-nextjs-starter
 npm install
 npm run quickstart
-git add *
-git commit -a -m"quickstart"
-git push origin
 npm run dev
 ```
 
@@ -54,9 +51,11 @@ npm install -g vercel
 vercel login
 ```
 
-These commands will build and deploy your repo to Vercel and then load the deployed site:
+These commands will configure, build, and deploy your repo to Vercel and then load the deployed site:
 
 ```sh
+vercel link hello-nextjs-starter
+npm run config:vercel
 DEPLOYMENT=$(vercel --yes)
 npx open-cli $DEPLOYMENT
 ```

@@ -7,7 +7,14 @@
         "start": "next start",
         "lint": "next lint",
         "quickstart": "npx @hellocoop/quickstart -s -w -f '.env' -x 'Next.js Starter' -p 'github gitlab google email--' -i 'hello-nextjs-starter'",
-        "https": "next dev --experimental-https"
+        "https": "next dev --experimental-https",
+        "config:vercel": "npm-run-all config:vercel:*",
+        "config:vercel:client_id-development": "node -r dotenv/config -e \"process.stdout.write(process.env.HELLO_CLIENT_ID)\" | vercel env HELLO_CLIENT_ID development",
+        "config:vercel:client_id-preview": "node -r dotenv/config -e \"process.stdout.write(process.env.HELLO_CLIENT_ID)\" | vercel env HELLO_CLIENT_ID preview",
+        "config:vercel:client_id-production": "node -r dotenv/config -e \"process.stdout.write(process.env.HELLO_CLIENT_ID)\" | vercel env HELLO_CLIENT_ID production",
+        "config:vercel:secret-development": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env HELLO_COOKIE_SECRET development",
+        "config:vercel:secret-preview": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env HELLO_COOKIE_SECRET preview",
+        "config:vercel:secret-production": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env HELLO_COOKIE_SECRET production"
     },
     "dependencies": {
         "@hellocoop/nextjs": "latest",
@@ -25,6 +32,7 @@
         "autoprefixer": "10.4.15",
         "eslint": "8.49.0",
         "eslint-config-next": "^13.5.1",
+        "npm-run-all": "^4.1.5",
         "open-cli": "^7.2.0",
         "postcss": "8.4.29",
         "tailwindcss": "3.3.3",
