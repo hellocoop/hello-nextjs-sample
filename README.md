@@ -4,7 +4,7 @@ This is a starter application for the Hellō Next.js SDK [@hellocoop/nextjs](htt
 
 You can have this app running fully configured on localhost in a minute, and then deploy to Vercel fully configured a minute later.
 
-See a deployed version  at [https://hello-nextjs-starter.vercel.appss](https://hello-nextjs-starter.vercel.app)
+See a deployed version  at [https://hello-nextjs-starter.vercel.app](https://hello-nextjs-starter.vercel.app)
 
 To run locally, you will need:
 
@@ -20,7 +20,7 @@ To run locally, you will need:
 [How to clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 - Click on the `[ <> Code ▾ ]` button above and copy the address of your forked repo to your clipboard.
-- Open a terminal on your machine, type `git clone `, and then paste in the address you copied. 
+- Open a terminal on your machine, type `git clone`, and then paste in the address you copied. 
 
 This will create a `hello-nextjs-starter` directory on your machine with the contents of this repo.
 
