@@ -24,7 +24,7 @@ To run locally, you will need:
 
 This will create a `hello-nextjs-starter` directory on your machine with the contents of this repo.
 
-## 3\. Install, setup, commit, push, and run!
+## 3\. Install, configure, and run!
 
 Run these commands to start running locally:
 
