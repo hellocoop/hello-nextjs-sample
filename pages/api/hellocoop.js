@@ -1,4 +1,4 @@
-import { HelloAuth } from '@hellocoop/nextjs'
+import { PageAuth } from '@hellocoop/nextjs'
 import loggedIn from '@/src/loggedin' // skeleton for logged in
 
 const config = {
@@ -6,4 +6,4 @@ const config = {
         loggedIn
     }
 }
-export default HelloAuth(config)
+export default PageAuth(config)
