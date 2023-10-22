@@ -73,7 +73,7 @@ After deploying the app to Vercel, you are able to access your app when deployed
 
 ## 5\. Deploy to Netlify
 
-Coming soon. Netlify currently has issues deploying [Next.js 13.5](https://answers.netlify.com/t/runtime-importmoduleerror-error-cannot-find-module-styled-jsx-style/102375/19)
+Coming soon. Netlify currently has issues deploying [Next.js 13.5](https://answers.netlify.com/t/runtime-importmoduleerror-error-cannot-find-module-styled-jsx-style/102375)
 
 The deployed version at [https://hello-nextjs-starter.netlify.app/](https://hello-nextjs-starter.netlify.app/) uses Next.js 13.4
 
