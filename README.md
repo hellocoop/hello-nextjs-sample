@@ -64,9 +64,11 @@ No other configuration needed at Vercel!
 
 
 ### How Configuration Works
-The Hellō Quickstart Web App created your application at Hellō and returned your `client_id`. You are able to use your app on your own machine immediately as `http://localhost:*` Redirect URIs are enabled for your development team by default.
+The Hellō Quickstart Web App created your application at Hellō, returned your `client_id` and then added it and a cookie encryption secret to `.env` as `HELLO_CLIENT_ID` and `HELLO_COOKIE_SECRET` respectively. You are able to use your app on your own machine immediately as `http://localhost:*` Redirect URIs are enabled for your development team by default.
 
-You are able to access your app when deployed as we have enabled `https://*` Redirect URIs for members of your development team. The first time you login to your deployed app, the [@hellocoop/nextjs](https://www.npmjs.com/package/@hellocoop/nextjs) package auto configures the `redirect_uri`, and on return you will be prompted to add the Redirect URI to your app at the [Hello Developer Console](https://console.hello.coop/). For development deployments, add to your Development Redirect URIs, for production or deployments you want others to access, add to your Production Redirect URIs.
+The `npm run config:vercel` command uploads the `HELLO_CLIENT_ID` and a new random secret `HELLO_COOKIE_SECRET`to, the Vercel `production`, `preview`, and `development` environments. 
+
+After deploying the app to Vercel, you are able to access your app when deployed as we have enabled `https://*` Redirect URIs for members of your development team. The first time you login to your deployed app, the [@hellocoop/nextjs](https://www.npmjs.com/package/@hellocoop/nextjs) package auto configures the `redirect_uri`, and on return you will be prompted to add the Redirect URI to your app at the [Hello Developer Console](https://console.hello.coop/). For `preview` deployments you only want your team to access, add to your Development Redirect URIs, for production or deployments you want others to access, add to your Production Redirect URIs.
 
 
 ## 5\. Deploy to Netlify
