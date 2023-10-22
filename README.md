@@ -4,7 +4,7 @@ This is a starter application for the Hellō Next.js SDK [@hellocoop/nextjs](htt
 
 You can have this app running fully configured on localhost in a minute, and then deploy to Vercel fully configured a minute later.
 
-See a deployed version  at [https://hello-nextjs-starter.vercel.app](https://hello-nextjs-starter.vercel.app) and [https://hello-nextjs-starter.netlify.app/](https://hello-nextjs-starter.netlify.app/)
+See a deployed version  at [https://hello-nextjs-starter.vercel.app](https://hello-nextjs-starter.vercel.app) 
 
 To run locally, you will need:
 
@@ -72,6 +72,8 @@ You are able to access your app when deployed as we have enabled `https://*` Red
 ## 5\. Deploy to Netlify
 
 Coming soon. Netlify currently has issues deploying [Next.js 13.5](https://answers.netlify.com/t/runtime-importmoduleerror-error-cannot-find-module-styled-jsx-style/102375/19)
+
+The deployed version at [https://hello-nextjs-starter.netlify.app/](https://hello-nextjs-starter.netlify.app/) uses Next.js 13.4
 
 ---
 
