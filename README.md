@@ -4,7 +4,7 @@ This is a starter application for the Hellō Next.js SDK [@hellocoop/nextjs](htt
 
 You can have this app running fully configured on localhost in a minute, and then deploy to Vercel fully configured a minute later.
 
-See a deployed version  at [https://hello-nextjs-starter.vercel.app](https://hello-nextjs-starter.vercel.app)
+See a deployed version  at [https://hello-nextjs-starter.vercel.app](https://hello-nextjs-starter.vercel.app) and [https://hello-nextjs-starter.netlify.app/](https://hello-nextjs-starter.netlify.app/)
 
 To run locally, you will need:
 
@@ -37,7 +37,7 @@ npm run dev
 
 Open <http://localhost:3000> (assuming port 3000 was free)
 
-## 4\. Deploy to Vercel and open your deployment
+## 4\. Deploy to Vercel
 
 You will need:
 
@@ -62,10 +62,16 @@ npx open-cli $DEPLOYMENT
 
 No other configuration needed at Vercel!
 
+
 ### How Configuration Works
 The Hellō Quickstart Web App created your application at Hellō and returned your `client_id`. You are able to use your app on your own machine immediately as `http://localhost:*` Redirect URIs are enabled for your development team by default.
 
 You are able to access your app when deployed as we have enabled `https://*` Redirect URIs for members of your development team. The first time you login to your deployed app, the [@hellocoop/nextjs](https://www.npmjs.com/package/@hellocoop/nextjs) package auto configures the `redirect_uri`, and on return you will be prompted to add the Redirect URI to your app at the [Hello Developer Console](https://console.hello.coop/). For development deployments, add to your Development Redirect URIs, for production or deployments you want others to access, add to your Production Redirect URIs.
+
+
+## 5\. Deploy to Netlify
+
+Coming soon. Netlify currently has issues deploying [Next.js 13.5](https://answers.netlify.com/t/runtime-importmoduleerror-error-cannot-find-module-styled-jsx-style/102375/19)
 
 ---
 
