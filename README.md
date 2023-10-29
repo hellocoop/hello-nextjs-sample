@@ -64,6 +64,10 @@ npx open-cli $DEPLOYMENT
 
 No other configuration needed at Vercel!
 
+To delete the Vercel deployment:
+```sh
+vercel remove hello-nextjs-starter --yes
+```
 
 ### How Configuration Works
 The Hellō Quickstart Web App created your application at Hellō, returned your `client_id` and then added it and a cookie encryption secret to `.env` as `HELLO_CLIENT_ID` and `HELLO_COOKIE_SECRET` respectively. You are able to use your app on your own machine immediately as `http://localhost:*` Redirect URIs are enabled for your development team by default.
