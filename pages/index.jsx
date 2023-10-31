@@ -5,7 +5,7 @@ import Info from "@/components/Info"
 
 // getServerSideProps - auth is available on page load
 
-import { ContinueButton, LoggedIn, LoggedOut, HelloProvider } from "@hellocoop/nextjs"
+import { ContinueButton, LoggedIn, LoggedOut, HelloProvider } from "@hellocoop/nextjs/react"
 
 export default function Home({auth}) {  
     return (
@@ -29,7 +29,7 @@ export { getServerSideProps } from "@hellocoop/nextjs"
 
 // // client retrieves auth
 
-// import { ContinueButton, LoggedIn, LoggedOut } from "@hellocoop/nextjs"
+// import { ContinueButton, LoggedIn, LoggedOut } from "@hellocoop/nextjs/react"
 // export default function Home() {  
 //     return (
 //         <Layout>

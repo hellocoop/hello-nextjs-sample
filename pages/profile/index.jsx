@@ -5,7 +5,7 @@ import { useEffect } from "react"
 
 // getServerSideProps - auth is available on page load
 
-import { HelloProvider, LoggedIn, useAuth } from "@hellocoop/nextjs"
+import { HelloProvider, LoggedIn, useAuth } from "@hellocoop/nextjs/react"
 
 export default function ProfilePage({auth}){
     const { replace } = useRouter()
@@ -30,7 +30,7 @@ export { getServerSideProps } from "@hellocoop/nextjs"
 
 // // client retrieves auth
 
-// import { LoggedIn, useAuth } from "@hellocoop/nextjs"
+// import { LoggedIn, useAuth } from "@hellocoop/nextjs/react"
 
 // export default function ProfilePage(){
 //     const { replace } = useRouter()

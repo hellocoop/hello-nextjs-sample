@@ -1,6 +1,6 @@
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
-import { useAuth } from "@hellocoop/nextjs";
+import { useAuth } from "@hellocoop/nextjs/react";
 
 export default function Hero() {
     const { auth: { name } } = useAuth()

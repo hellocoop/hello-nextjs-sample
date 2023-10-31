@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { LoggedIn, logOutRoute, useAuth } from '@hellocoop/nextjs'
+import { LoggedIn, getLogOutRoute, useAuth } from '@hellocoop/nextjs/react'
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
 
@@ -56,7 +56,7 @@ const Header = () => {
                                 <nav className="absolute top-10 bg-charcoal px-6 py-2 flex flex-col items-end md:w-3/4 z-40 text-gray">
                                     <span className="md:hidden opacity-60 py-2">{email}</span>
                                     {!["/profile"].includes(pathname) && <Link href="/profile" className="py-2 hover:underline">Profile</Link>}
-                                    <Link href={logOutRoute} className="py-2 hover:underline">Log Out</Link>
+                                    <Link href={getLogOutRoute()} className="py-2 hover:underline">Log Out</Link>
                                 </nav>
                                 <span onClick={()=>setMenu(false)} className="h-screen w-screen left-0 fixed z-30 top-12 bg-black bg-opacity-80"></span>
                             </>
