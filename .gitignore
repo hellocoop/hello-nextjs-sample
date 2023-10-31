@@ -36,3 +36,8 @@ next-env.d.ts
 certificates
 # Local Netlify folder
 .netlify
+
+# ignore lock file so installs get latest
+package-lock.json
+
+

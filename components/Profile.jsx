@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { UpdatePictureButton, UpdateEmailButton, useAuth } from "@hellocoop/nextjs"
+import { UpdatePictureButton, UpdateEmailButton, useAuth } from "@hellocoop/nextjs/react"
 
 const ProfileSection = ({children}) => {
     return (

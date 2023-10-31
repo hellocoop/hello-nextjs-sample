@@ -1,6 +1,6 @@
 import createGlobe from "cobe";
 import { useEffect, useRef } from "react";
-import { useAuth } from "@hellocoop/nextjs";
+import { useAuth } from "@hellocoop/nextjs/react";
 
 export default function Hero() {
     const { auth: { name } } = useAuth()
@@ -51,8 +51,6 @@ function Globe() {
         { location: [43.6532, -79.3832], size: 0.035 }, //Toronto
         { location: [19.0760, 72.8777], size: 0.035 }, //Mumbai
         { location: [40.7128, -74.0060], size: 0.035 }, //New York
-        { location: [39.9042, 116.4074], size: 0.035 }, //Beijing
-        { location: [31.2304, 121.4737], size: 0.035 }, //Shanghai
         { location: [1.3521, 103.8198], size: 0.035 }, //Singapore
         { location: [6.5244, 3.3792], size: 0.035 }, //Lagos
         { location: [31.2001, 29.9187], size: 0.035 }, //Alexandria
