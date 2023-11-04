@@ -1,12 +1,12 @@
 {
-    "name": "hello-next-starter",
+    "name": "hello-next-sample",
     "version": "1.0.2",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "quickstart": "npx @hellocoop/quickstart --nextjs -x 'Next.js Starter' -i 'hello-nextjs-starter'",
+        "quickstart": "npx @hellocoop/quickstart --nextjs -x 'Next.js Sample' -i 'hello-nextjs-sample'",
         "https": "next dev --experimental-https",
         "config:vercel": "npm-run-all config:vercel:*",
         "config:vercel:secret-development": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET development",

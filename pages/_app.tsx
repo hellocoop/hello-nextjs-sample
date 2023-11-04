@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Hellō Next.js Starter</title>
+        <title>Hellō Next.js Sample</title>
       </Head>
       <Component {...pageProps} />
     </>
