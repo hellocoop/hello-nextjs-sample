@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const links = [
     {
-        text: "Add Hellō to your Next.js app<br/>hello-nextjs-sample",
+        text: "Add Hellō to your Next.js app<br/>@hellocoop/nextjs",
         link: "https://www.hello.dev/docs/quickstarts/nextjs",
         linkText: "hello.dev"
     },
