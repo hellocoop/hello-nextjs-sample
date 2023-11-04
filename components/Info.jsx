@@ -4,7 +4,7 @@ const links = [
     {
         text: "Add Hellō to your Next.js app<br/>hello-nextjs-sample",
         link: "https://www.hello.dev/docs/quickstarts/nextjs",
-        linkText: "helo.dev"
+        linkText: "hello.dev"
     },
     {
         text: "Checkout this sample app<br/>hello-nextjs-sample",
@@ -12,9 +12,9 @@ const links = [
         linkText: "GitHub"
     },
     {
-        text: "Learn more about Hellō",
+        text: "Learn more about the<br/>Hellō Co-operative",
         link: "https://www.hello.coop",
-        linkText: "hello.cop"
+        linkText: "hello.coop"
     },
 ]
 
