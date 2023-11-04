@@ -1,10 +1,10 @@
-# Hellō Next.js Starter
+# Hellō Next.js Sample
 
-This is a starter application for the Hellō Next.js SDK [@hellocoop/nextjs](https://www.npmjs.com/package/@hellocoop/nextjs)
+This is a sample application for the Hellō Next.js SDK [@hellocoop/nextjs](https://www.npmjs.com/package/@hellocoop/nextjs)
 
 You can have this app running fully configured on localhost in a minute, and then deploy to Vercel fully configured a minute later.
 
-See a deployed version  at [https://hello-nextjs-starter.vercel.app](https://hello-nextjs-starter.vercel.app) 
+See a deployed version  at [https://hello-nextjs-sample.vercel.app](https://hello-nextjs-sample.vercel.app) 
 
 To run locally, you will need:
 
@@ -14,7 +14,7 @@ To run locally, you will need:
 
 ## 1\. Fork this repository to your GitHub account
 
-<https://github.com/hellocoop/hello-nextjs-starter/fork>
+<https://github.com/hellocoop/hello-nextjs-sample/fork>
 
 ## 2\. Clone your fork to your local machine
 [How to clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
@@ -22,14 +22,14 @@ To run locally, you will need:
 - Click on the `[ <> Code ▾ ]` button above and copy the address of your forked repo to your clipboard.
 - Open a terminal on your machine, type `git clone`, and then paste in the address you copied. 
 
-This will create a `hello-nextjs-starter` directory on your machine with the contents of this repo.
+This will create a `hello-nextjs-sample` directory on your machine with the contents of this repo.
 
 ## 3\. Install, configure, and run!
 
 Run these commands to start running locally:
 
 ```sh
-cd hello-nextjs-starter
+cd hello-nextjs-sample
 npm install
 npm run quickstart
 npm run dev
@@ -66,7 +66,7 @@ No other configuration needed at Vercel!
 
 To delete the Vercel deployment:
 ```sh
-vercel remove hello-nextjs-starter --yes
+vercel remove hello-nextjs-sample --yes
 ```
 
 ### How Configuration Works
@@ -81,7 +81,7 @@ After deploying the app to Vercel, you are able to access your app when deployed
 
 Coming soon. Netlify currently has issues deploying [Next.js 13.5](https://answers.netlify.com/t/runtime-importmoduleerror-error-cannot-find-module-styled-jsx-style/102375)
 
-The deployed version at [https://hello-nextjs-starter.netlify.app/](https://hello-nextjs-starter.netlify.app/) uses Next.js 13.4
+The deployed version at [https://hello-nextjs-sample.netlify.app/](https://hello-nextjs-sample.netlify.app/) uses Next.js 13.4
 
 ---
 

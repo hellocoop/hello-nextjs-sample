@@ -38,7 +38,7 @@ const Header = () => {
                     <span className="inline-flex items-center space-x-2">
                         <Image src="/hello.svg" priority={true} alt="Hello" width={52} height={16} />
                         <Image src="/next.svg" priority={true} alt="Next.js" width={82} height={17} />
-                        <span className="text-2xl -mt-0.5 italic text-gray">Starter</span>
+                        <span className="text-2xl -mt-0.5 italic text-gray">Sample</span>
                     </span>
                 </Link>
 

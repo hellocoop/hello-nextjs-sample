@@ -2,8 +2,8 @@ import Link from "next/link"
 
 const links = [
     {
-        text: "Learn about this app<br/>hello-nextjs-starter",
-        link: "https://github.com/hellocoop/hello-nextjs-starter",
+        text: "Learn about this app<br/>hello-nextjs-sample",
+        link: "https://github.com/hellocoop/hello-nextjs-sample",
         linkText: "GitHub"
     },
     {
@@ -29,7 +29,7 @@ export default function Info() {
         <section>
             <hr className="border-black dark:border-white opacity-25 my-10"/>
             <p>
-                This starter app demonstrates how you can add Hellō login and registration to a Next.js app in seconds
+                This sample app demonstrates how you can add Hellō login and registration to a Next.js app in seconds
                 with the <Link target="_blank" href="https://www.npmjs.com/package/@hellocoop/quickstart">@hellocoop/quickstart</Link><LinkIcon/> and <Link target="_blank" href="https://www.npmjs.com/package/@hellocoop/nextjs">@hellocoop/nextjs</Link><LinkIcon/> packages.<br/>
                 User profile data is stored in an encrypted and integrity protected cookie.</p>
             <div className="flex flex-wrap justify-between mt-10 gap-0">

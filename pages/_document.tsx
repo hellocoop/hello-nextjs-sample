@@ -4,7 +4,7 @@ export default function Document() {
     return (
         <Html>
             <Head>
-                <meta name="title" content="Hellō Next.js Starter"/>
+                <meta name="title" content="Hellō Next.js Sample"/>
                 <meta name="description" content="Login and registration in seconds"/>
                 <link rel="icon" href="https://cdn.hello.coop/images/favicon-light.png"  media="(prefers-color-scheme: light)" />
                 <link rel="icon" href="https://cdn.hello.coop/images/favicon-dark.png" media="(prefers-color-scheme: dark)" />
