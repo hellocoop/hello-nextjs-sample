@@ -2,19 +2,19 @@ import Link from "next/link"
 
 const links = [
     {
-        text: "Learn about this app<br/>hello-nextjs-sample",
+        text: "Add Hellō to your Next.js app<br/>hello-nextjs-sample",
+        link: "https://www.hello.dev/docs/quickstarts/nextjs",
+        linkText: "helo.dev"
+    },
+    {
+        text: "Checkout this sample app<br/>hello-nextjs-sample",
         link: "https://github.com/hellocoop/hello-nextjs-sample",
         linkText: "GitHub"
     },
     {
-        text: "Learn how to use the<br/>@hellocoop/nextjs package",
-        link: "https://www.npmjs.com/package/@hellocoop/nextjs",
-        linkText: "npm"
-    },
-    {
-        text: "Learn how to customize the<br/>Hellō experience",
-        link: "https://www.hello.dev/documentation",
-        linkText: "hello.dev"
+        text: "Learn more about Hellō",
+        link: "https://www.hello.coop",
+        linkText: "hello.cop"
     },
 ]
 
