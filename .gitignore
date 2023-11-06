@@ -33,11 +33,16 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# certs created by next dev --experimental-https
 certificates
+
 # Local Netlify folder
 .netlify
 
 # ignore lock file so installs get latest
 package-lock.json
+pnpm-lock.yaml
+yarn.lock
 
-
+# log files
+*.log
