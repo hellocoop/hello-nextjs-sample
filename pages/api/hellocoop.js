@@ -1,4 +1,4 @@
-// pages/api/hellocoop.ts
+// pages/api/hellocoop.js
 
 import config from '../../hello.config'
 import { pageAuth } from '@hellocoop/nextjs'
