@@ -10,6 +10,19 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Hellō Next.js Sample</title>
       </Head>
       <Component {...pageProps} />
+      <style jsx global>{`
+          body {
+              color: #303030;
+              background-color: white;
+          }
+          @media (prefers-color-scheme: dark) {
+              body {
+                  color: #d4d4d4;
+                  background-color: #151515;
+                  color-scheme: dark;
+              }
+          }
+      `}</style>
     </>
   )
 }

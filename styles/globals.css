@@ -12,17 +12,7 @@ div#__next {
   overflow: hidden;
 }
 
-body {
-  color: #303030;
-  background-color: white;
-}
-
 @media (prefers-color-scheme: dark) {
-  body {
-    color: #d4d4d4;
-    background-color: #151515;
-    color-scheme: dark;
-  }
   .blinker {
     background: #d4d4d4;
   }
