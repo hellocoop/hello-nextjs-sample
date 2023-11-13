@@ -6,6 +6,8 @@ You can have this app running fully configured on localhost in a minute, and the
 
 See a deployed version  at [https://hello-nextjs-sample.vercel.app](https://hello-nextjs-sample.vercel.app) 
 
+> If you want to add Hellō to your own Next.js app, we have a [Quickstart](https://www.hello.dev/docs/quickstarts/nextjs/) for that!
+
 To run locally, you will need:
 
 - [nodejs 18+](https://nodejs.org/en/download)
