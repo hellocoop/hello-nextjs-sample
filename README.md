@@ -41,13 +41,7 @@ Open <http://localhost:3000> (assuming port 3000 was free)
 
 Click the `[ ō Continue with Hellō ]` button to login. You will be sent to the Hellō Wallet. As you have not added a logo or urls, you will see placeholders.
 
-## 5\. Check in updates
-
-
-
-
-
-## 4\. Deploy to Vercel
+## 4\. Check in Updates & Deploy to Vercel
 
 You will need:
 
