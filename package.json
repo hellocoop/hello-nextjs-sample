@@ -23,9 +23,9 @@
         "quickstart": "npx @hellocoop/quickstart --nextjs -x 'Next.js Sample' -i 'hello-nextjs-sample'",
         "https": "next dev --experimental-https",
         "config:vercel": "npm-run-all config:vercel:*",
-        "config:vercel:secret-development": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET development",
-        "config:vercel:secret-preview": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET preview",
-        "config:vercel:secret-production": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET production"
+        "config:vercel:secret-development": "node -e \"process.stdout.write(crypto.randomBytes(16).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET development",
+        "config:vercel:secret-preview": "node -e \"process.stdout.write(crypto.randomBytes(16).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET preview",
+        "config:vercel:secret-production": "node -e \"process.stdout.write(crypto.randomBytes(16).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET production"
     },
     "dependencies": {
         "@hellocoop/nextjs": "latest",
