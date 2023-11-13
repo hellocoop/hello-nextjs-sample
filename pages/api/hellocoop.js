@@ -1,5 +1,5 @@
 // pages/api/hellocoop.js
 
-const config = require('../../hello.config')
-const { pageAuth } = require('@hellocoop/nextjs')
-module.exports = pageAuth(config)
+import config from '../../hello.config'
+import { pageAuth } from '@hellocoop/nextjs'
+export default pageAuth(config)
