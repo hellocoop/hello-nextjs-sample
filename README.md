@@ -65,13 +65,13 @@ The following commands will:
 ```sh
 git commit -a -m"quickstart"
 git push origin
-vercel link
+vercel link --yes
 npm run config:vercel
 DEPLOYMENT=$(vercel --yes)
 npx open-cli $DEPLOYMENT
 ```
 
-> Accept all the defaults from `vercel link`
+> We have had a report that `vercel link --yes` may fail. We have not been able to replicate. If it fails, please run `vercel link --yes --debug`. You can likely work around it with `vercel link` and accept all defaults.
 
 No other configuration needed at Vercel!
 
