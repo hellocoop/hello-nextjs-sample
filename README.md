@@ -14,19 +14,15 @@ To run locally, you will need:
 - [git](https://github.com/git-guides/install-git)
 - A [GitHub](https://github.com) account
 
-## 1\. Fork this repository to your GitHub account
+## 1\. Fork and clone this repository to your GitHub account
 
 <https://github.com/hellocoop/hello-nextjs-sample/fork>
 
-## 2\. Clone your fork to your local machine
 [How to clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-- Click on the `[ <> Code ▾ ]` button above and copy the address of your forked repo to your clipboard.
-- Open a terminal on your machine, type `git clone`, and then paste in the address you copied. 
+You should now have a `hello-nextjs-sample` directory on your machine with the contents of this repo.
 
-This will create a `hello-nextjs-sample` directory on your machine with the contents of this repo.
-
-## 3\. Install, configure, and run!
+## 2\. Install, configure, and run!
 
 Run these commands to start running locally:
 
@@ -41,7 +37,7 @@ Open <http://localhost:3000> (assuming port 3000 was free)
 
 Click the `[ ō Continue with Hellō ]` button to login. You will be sent to the Hellō Wallet. As you have not added a logo or urls, you will see placeholders.
 
-## 4\. Check in Updates & Deploy to Vercel
+## 3\. Check in Updates & Deploy to Vercel
 
 You will need:
 
@@ -80,7 +76,7 @@ To delete the Vercel deployment:
 vercel remove hello-nextjs-sample --yes
 ```
 
-### How Configuration Works
+# How Configuration Works
 The Hellō Quickstart Web App;
 - created your application at Hellō, returned your `client_id`, and added it to the `hello.config.ts` file
 - generated a random `HELLO_COOKIE_SECRET` and wrote it to `env.local`
