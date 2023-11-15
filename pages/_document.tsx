@@ -8,8 +8,8 @@ export default function Document() {
                 <meta name="description" content="Login and registration in seconds"/>
                 <link rel="icon" href="https://cdn.hello.coop/images/favicon-light.png"  media="(prefers-color-scheme: light)" />
                 <link rel="icon" href="https://cdn.hello.coop/images/favicon-dark.png" media="(prefers-color-scheme: dark)" />
-                
                 <link rel="stylesheet" href="https://cdn.hello.coop/css/hello-btn.css"/>
+                <script defer data-domain="hello-nextjs-sample.vercel.app" src="https://plausible.io/js/script.js"/>
             </Head>
             <body>
                 <Main />
