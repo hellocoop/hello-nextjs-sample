@@ -4,4 +4,4 @@ const config = {
 //    scope:[]          
 //    provider_hint:[]
 }
-export default config
+module.exports = config

@@ -4,7 +4,17 @@ This is a sample application for the Hellō Next.js SDK [@hellocoop/nextjs](http
 
 You can have this app running fully configured on localhost in a minute, and then deploy to Vercel fully configured a minute later.
 
+1. [Fork and clone this repository to your GitHub account](#1-fork-and-clone-this-repository-to-your-github-account)
+2. [ Install, configure, and run!](#2-install-configure-and-run)
+3. [Check in updates & deploy to Vercel](#3-check-in-updates--deploy-to-vercel)
+   
 See a deployed version  at [https://hello-nextjs-sample.vercel.app](https://hello-nextjs-sample.vercel.app) 
+
+> If you want to add Hellō to your own Next.js app, we have a [Quickstart](https://www.hello.dev/docs/quickstarts/nextjs/) for that!
+
+Here is a video that forks, clones, installs, configures, runs locally and then deploys to Vercel:
+
+[![Hellō Auto Config Demo Video](https://img.youtube.com/vi/u0Jm64yjHts/maxresdefault.jpg)](https://www.youtube.com/watch?v=u0Jm64yjHts)
 
 To run locally, you will need:
 
@@ -12,19 +22,15 @@ To run locally, you will need:
 - [git](https://github.com/git-guides/install-git)
 - A [GitHub](https://github.com) account
 
-## 1\. Fork this repository to your GitHub account
+## 1\. Fork and clone this repository to your GitHub account
 
 <https://github.com/hellocoop/hello-nextjs-sample/fork>
 
-## 2\. Clone your fork to your local machine
 [How to clone a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-- Click on the `[ <> Code ▾ ]` button above and copy the address of your forked repo to your clipboard.
-- Open a terminal on your machine, type `git clone`, and then paste in the address you copied. 
+You should now have a `hello-nextjs-sample` directory on your machine with the contents of this repo.
 
-This will create a `hello-nextjs-sample` directory on your machine with the contents of this repo.
-
-## 3\. Install, configure, and run!
+## 2\. Install, configure, and run!
 
 Run these commands to start running locally:
 
@@ -39,13 +45,7 @@ Open <http://localhost:3000> (assuming port 3000 was free)
 
 Click the `[ ō Continue with Hellō ]` button to login. You will be sent to the Hellō Wallet. As you have not added a logo or urls, you will see placeholders.
 
-## 5\. Check in updates
-
-
-
-
-
-## 4\. Deploy to Vercel
+## 3\. Check in updates & deploy to Vercel
 
 You will need:
 
@@ -75,6 +75,8 @@ DEPLOYMENT=$(vercel --yes)
 npx open-cli $DEPLOYMENT
 ```
 
+> We have had a report that `vercel link --yes` may fail. We have not been able to replicate. If it fails, please run `vercel link --yes --debug`. You can likely work around it with `vercel link` and accept all defaults.
+
 No other configuration needed at Vercel!
 
 To delete the Vercel deployment:
@@ -82,7 +84,8 @@ To delete the Vercel deployment:
 vercel remove hello-nextjs-sample --yes
 ```
 
-### How Configuration Works
+# How Configuration Works
+
 The Hellō Quickstart Web App;
 - created your application at Hellō, returned your `client_id`, and added it to the `hello.config.ts` file
 - generated a random `HELLO_COOKIE_SECRET` and wrote it to `env.local`
@@ -95,6 +98,6 @@ After deploying the app to Vercel, you are able to access your app when deployed
 
 ## Learn More
 
-- [Hellō Next.js SDK](https://www.npmjs.com/package/@hellocoop/nextjs) NOTE - the Next.js SDK API is under development and will change
+- [Hellō Next.js SDK](https://www.npmjs.com/package/@hellocoop/nextjs)
 - [Hellō Quickstart](https://www.npmjs.com/package/@hellocoop/quickstart)
 - [Hellō Documentation](https://www.hello.dev/documentation)
