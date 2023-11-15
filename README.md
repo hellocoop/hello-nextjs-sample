@@ -14,8 +14,8 @@ See a deployed version  at [https://hello-nextjs-sample.vercel.app](https://hell
 
 Here is a video that forks, clones, installs, configures, runs locally and then deploys to Vercel:
 
-[![Hellō Auto Config Demo Video](https://img.youtube.com/vi/u0Jm64yjHts/maxresdefault.jpg)](https://www.youtube.com/watch?v=u0Jm64yjHts)
-
+[![Hellō Auto Config Demo Video](https://img.youtube.com/vi/-5Dc9CVxeU4/maxresdefault.jpg)](https://www.youtube.com/watch?v=-5Dc9CVxeU4)
+https://youtu.be/-5Dc9CVxeU4
 To run locally, you will need:
 
 - [nodejs 18+](https://nodejs.org/en/download)
