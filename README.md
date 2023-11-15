@@ -85,6 +85,7 @@ vercel remove hello-nextjs-sample --yes
 ```
 
 # How Configuration Works
+
 The Hellō Quickstart Web App;
 - created your application at Hellō, returned your `client_id`, and added it to the `hello.config.ts` file
 - generated a random `HELLO_COOKIE_SECRET` and wrote it to `env.local`
