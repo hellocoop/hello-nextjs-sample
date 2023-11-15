@@ -16,6 +16,7 @@ Here is a video that forks, clones, installs, configures, runs locally and then 
 
 [![Hellō Auto Config Demo Video](https://img.youtube.com/vi/-5Dc9CVxeU4/maxresdefault.jpg)](https://www.youtube.com/watch?v=-5Dc9CVxeU4)
 https://youtu.be/-5Dc9CVxeU4
+
 To run locally, you will need:
 
 - [nodejs 18+](https://nodejs.org/en/download)
