@@ -4,9 +4,17 @@ This is a sample application for the Hellō Next.js SDK [@hellocoop/nextjs](http
 
 You can have this app running fully configured on localhost in a minute, and then deploy to Vercel fully configured a minute later.
 
+1. [Fork and clone this repository to your GitHub account](#1-fork-and-clone-this-repository-to-your-github-account)
+2. [ Install, configure, and run!](#2-install-configure-and-run)
+3. [Check in updates & deploy to Vercel](#3-check-in-updates--deploy-to-vercel)
+   
 See a deployed version  at [https://hello-nextjs-sample.vercel.app](https://hello-nextjs-sample.vercel.app) 
 
 > If you want to add Hellō to your own Next.js app, we have a [Quickstart](https://www.hello.dev/docs/quickstarts/nextjs/) for that!
+
+Here is a video that forks, clones, installs, configures, runs locally and then deploys to Vercel:
+
+[![Hellō Auto Config Demo Video](https://img.youtube.com/vi/u0Jm64yjHts/maxresdefault.jpg)](https://www.youtube.com/watch?v=u0Jm64yjHts)
 
 To run locally, you will need:
 
@@ -37,7 +45,7 @@ Open <http://localhost:3000> (assuming port 3000 was free)
 
 Click the `[ ō Continue with Hellō ]` button to login. You will be sent to the Hellō Wallet. As you have not added a logo or urls, you will see placeholders.
 
-## 3\. Check in Updates & Deploy to Vercel
+## 3\. Check in updates & deploy to Vercel
 
 You will need:
 
@@ -89,6 +97,6 @@ After deploying the app to Vercel, you are able to access your app when deployed
 
 ## Learn More
 
-- [Hellō Next.js SDK](https://www.npmjs.com/package/@hellocoop/nextjs) NOTE - the Next.js SDK API is under development and will change
+- [Hellō Next.js SDK](https://www.npmjs.com/package/@hellocoop/nextjs)
 - [Hellō Quickstart](https://www.npmjs.com/package/@hellocoop/quickstart)
 - [Hellō Documentation](https://www.hello.dev/documentation)
