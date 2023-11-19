@@ -102,3 +102,4 @@ After deploying the app to Vercel, you are able to access your app when deployed
 - [Hellō Next.js SDK](https://www.npmjs.com/package/@hellocoop/nextjs)
 - [Hellō Quickstart](https://www.npmjs.com/package/@hellocoop/quickstart)
 - [Hellō Documentation](https://www.hello.dev/documentation)
+  
