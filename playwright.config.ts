@@ -32,14 +32,14 @@ export default defineConfig({
   },
   webServer: [
     {
-      command: 'ISSUER=http://127.0.0.1:3210 npx mockin',
-      port: 3210,
+      command: 'npx mockin',
+      port: 3333,
       timeout: 120 * 1000,
       reuseExistingServer: true,
       stdout: "pipe"
     },
     {
-      command: 'HELLO_WALLET=http://127.0.0.1:3210 npm run dev',
+      command: 'HELLO_WALLET=http://127.0.0.1:3333 npm run dev',
       port: 3000,
       timeout: 120 * 1000,
       reuseExistingServer: true,
