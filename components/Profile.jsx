@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { UpdatePictureButton, UpdateEmailButton, useAuth } from "@hellocoop/nextjs/react"
+import { UpdateProfileButton, useAuth } from "@hellocoop/nextjs/react"
 
 const ProfileSection = ({children}) => {
     return (
@@ -21,16 +21,13 @@ export default function Profile() {
                 </ProfileSection>
                 <ProfileSection>
                     <Image src={picture} alt={name} width={96} height={96} className="rounded-full bg-[#cfcfcf] dark:bg-[#505050]" />
-                    {/* [ ō Update Picture with Hellō ] */}
-                    <UpdatePictureButton theme="aware-static" />
-                    {/* Default <UpdatePictureButton color="black" theme="ignore-light" hover="pop" />  */}
                 </ProfileSection>
                 <ProfileSection>
                     <h2 className="text-xl text-left">{email}</h2>
-                    {/* [ ō Update Email with Hellō ] */}
-                    <UpdateEmailButton theme="aware-static" />
-                    {/* Default <UpdateEmailButton color="black" theme="ignore-light" hover="pop" />  */}
                 </ProfileSection>
+                {/* [ ō Update Profile with Hellō ] */}
+                <UpdateProfileButton theme="aware-static" />
+                {/* Default <UpdateProfileButton color="black" theme="ignore-light" hover="pop" />  */}
             </div>
         </section>
     )

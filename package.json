@@ -5,22 +5,22 @@
         "name": "Hello Identity Co-op",
         "email": "contact@hello.coop",
         "url": "https://hello.coop"
-      },
-      "repository": {
+    },
+    "repository": {
         "type": "git",
         "url": "git+https://github.com/hellocoop/hello-nextjs-sample.git"
-      },
-      "bugs": {
+    },
+    "bugs": {
         "url": "https://github.com/hellocoop/hello-nextjs-sample/issues"
-      },
-      "homepage": "https://github.com/hellocoop/hello-nextjs-sample#readme",
-      "license": "MIT",
+    },
+    "homepage": "https://github.com/hellocoop/hello-nextjs-sample#readme",
+    "license": "MIT",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "quickstart": "npx @hellocoop/quickstart --nextjs -x 'Next.js Sample' -i 'hello-nextjs-sample'",
+        "quickstart": "npx @hellocoop/quickstart@latest --nextjs -x 'Next.js Sample' -i 'hello-nextjs-sample'",
         "https": "next dev --experimental-https",
         "config:vercel": "npm-run-all config:vercel:*",
         "config:vercel:secret-development": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET development",
@@ -28,14 +28,14 @@
         "config:vercel:secret-production": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET production"
     },
     "dependencies": {
-        "@hellocoop/nextjs": "latest",
+        "@hellocoop/nextjs": "^3.0.0",
         "cobe": "^0.6.3",
-        "next": "^13.4.1",
+        "next": "^13.5.6",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     },
     "devDependencies": {
-        "@hellocoop/quickstart": "latest",
+        "@hellocoop/quickstart": "~2.8.5",
         "@types/node": "20.6.1",
         "@types/react": "18.2.21",
         "@types/react-dom": "18.2.7",
