@@ -2,7 +2,7 @@
 import type { LoginSyncParams, LoginSyncResponse } from '@hellocoop/nextjs'
 
 
-const loggedIn = async function ({ token, payload, cbReq, cbRes }: LoginSyncParams): Promise<LoginSyncResponse> {
+const loggedIn = async function ({ token, payload }: LoginSyncParams): Promise<LoginSyncResponse> {
     // token: string - a compact OpenID Connect ID Token  
     // payload: Claims - the parsed and typed payload from the ID Token
     //      eg. payload.sub
