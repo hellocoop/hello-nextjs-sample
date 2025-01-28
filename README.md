@@ -40,10 +40,7 @@ cd hello-nextjs-sample
 npm install
 npm run quickstart
 ```
-You should see a prompt to hit ENTER to open the browser.  Once the browser is open, follow the steps to update your local environment with the necessary configuration. It should look something like:
-
-![image](https://github.com/brose1977/hello-nextjs-sample/assets/13365872/c5cbb9df-7de8-452d-be27-363930b9530f)
-
+You should see a prompt to hit ENTER to open the browser.  Once the browser is open, follow the steps to update your local environment with the necessary configuration.
 Once completed, you will now have the necessary configuration and environment variables. Continue by running the following: 
 
 ```
