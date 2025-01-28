@@ -41,6 +41,7 @@ npm install
 npm run quickstart
 ```
 You should see a prompt to hit ENTER to open the browser.  Once the browser is open, follow the steps to update your local environment with the necessary configuration.
+
 Once completed, you will now have the necessary configuration and environment variables. Continue by running the following: 
 
 ```
