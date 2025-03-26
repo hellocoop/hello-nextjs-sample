@@ -2,11 +2,30 @@
 const nextConfig = {
     images: {
         domains: [
-            'cdn.hello.coop', //Hellō Generic Profile Picture
-            'pictures.hello.coop',
-            'www.gravatar.com',
-            'pictures.hello-staging.net',
-            'pictures.hello-dev.net'
+            {
+                protocol: 'https',
+                hostname: 'cdn.hello.coop' //Hellō Generic Profile Picture
+            },
+            {
+                protocol: 'https',
+                hostname: 'pictures.hello.coop'
+            },
+            {
+                protocol: 'https',
+                hostname: 'gravatar.com'
+            },
+            {
+                protocol: 'https',
+                hostname: 'hello-staging.net'
+            },
+            {
+                protocol: 'https',
+                hostname: 'hello-beta.net'
+            },
+            {
+                protocol: 'https',
+                hostname: 'hello-dev.net'
+            },
         ]
     }
 };

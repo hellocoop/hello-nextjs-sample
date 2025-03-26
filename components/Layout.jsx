@@ -45,7 +45,7 @@ const Header = () => {
 
                 <LoggedIn>
                     <div className="flex justify-end relative">
-                        <button onClick={()=>setMenu(!menu)} className="flex items-center space-x-2 text-gray hover:bg-[#505050] py-1 px-2 rounded-md">
+                        <button onClick={()=>setMenu(!menu)} className="flex items-center space-x-2 text-gray hover:bg-[#505050] py-1 px-2 rounded-md cursor-pointer">
                             <Image src={picture} alt={name} width={28} height={28} className="rounded-full bg-[#505050]" />
                             <span className="hidden md:block">{email}</span>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className={`h-4 ${menu ? "rotate-180" : ""}`}>
@@ -57,9 +57,9 @@ const Header = () => {
                                 <nav className="absolute top-10 bg-[#303030] px-6 py-2 flex flex-col items-end md:w-3/4 z-40 text-gray">
                                     <span className="md:hidden opacity-60 py-2">{email}</span>
                                     {!["/profile"].includes(pathname) && <Link href="/profile" className="py-2 hover:underline">Profile</Link>}
-                                    <Link href={getLogOutRoute()} className="py-2 hover:underline">Log Out</Link>
+                                    <Link prefetch={false} href={getLogOutRoute()} className="py-2 hover:underline">Log Out</Link>
                                 </nav>
-                                <span onClick={()=>setMenu(false)} className="h-screen w-screen left-0 fixed z-30 top-12 bg-black bg-opacity-80"></span>
+                                <span onClick={()=>setMenu(false)} className="h-screen w-screen left-0 fixed z-30 top-12 bg-black/80"></span>
                             </>
                         )}
                     </div>
