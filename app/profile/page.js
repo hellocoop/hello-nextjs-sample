@@ -15,6 +15,8 @@ const ProfileSection = ({children}) => {
 
 export default async function ProfilePage(){
     const user = await auth()
+
+    console.log({user})
     
     if(!user.isLoggedIn) 
         return redirect("/");
