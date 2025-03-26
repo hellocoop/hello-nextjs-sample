@@ -1,0 +1,55 @@
+{
+    "name": "@hellocoop/react",
+    "version": "3.1.9",
+    "description": "React SDK for Hellō https://hello.dev",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hellocoop/packages.git"
+    },
+    "homepage": "https://www.hello.dev/docs/sdks/react",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist/"
+    ],
+    "keywords": [
+        "reactjs",
+        "react",
+        "react.js",
+        "hello",
+        "openid",
+        "oidc",
+        "sso"
+    ],
+    "author": {
+        "name": "Hello Identity Co-op",
+        "email": "contact@hello.coop",
+        "url": "https://hello.coop"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hellocoop/packages/issues"
+    },
+    "scripts": {
+        "watch": "tsc --watch --declaration",
+        "prebuild": "rimraf dist/",
+        "build": "tsc --declaration"
+    },
+    "peerDependencies": {
+        "react": ">=17",
+        "react-dom": ">=17"
+    },
+    "devDependencies": {
+        "@types/react": "^18.2.21",
+        "rimraf": "^5.0.1",
+        "typescript": "^5.2.2"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "dependencies": {
+        "@hellocoop/definitions": "^1.0.9",
+        "swr": "^2.2.2"
+    },
+    "gitHead": "96cc2f3fa1a3724a4a96b19cc7c5d97f04cc49f8"
+}
