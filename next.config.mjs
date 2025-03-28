@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: [
+        remotePatterns: [
             {
                 protocol: 'https',
                 hostname: 'cdn.hello.coop' //Hellō Generic Profile Picture
