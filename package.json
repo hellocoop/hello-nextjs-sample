@@ -21,7 +21,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "quickstart": "npx @hellocoop/quickstart@latest --nextjs -x \"Next.js Sample\" -i \"hello-nextjs-sample\"",
+    "quickstart": "npx @hellocoop/quickstart@latest --nextjs_app_router -x \"Next.js Sample\" -i \"hello-nextjs-sample\"",
     "https": "next dev --experimental-https",
     "config:vercel": "npm-run-all config:vercel:*",
     "config:vercel:secret-development": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET development",
