@@ -33,8 +33,8 @@ export default async function HomePage() {
 // import Prompt from "@/components/Prompt";
 // import Info from "@/components/Info";
 // import Layout from "@/components/Layout";
-
 // import { ContinueButton, LoggedIn, LoggedOut } from "@hellocoop/nextjs/react"
+
 // export default function Home() {  
 //   return (
 //     <Layout>
