@@ -1,51 +1,48 @@
 {
-    "name": "hello-next-sample",
-    "version": "1.2.0",
-    "author": {
-        "name": "Hello Identity Co-op",
-        "email": "contact@hello.coop",
-        "url": "https://hello.coop"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/hellocoop/hello-nextjs-sample.git"
-    },
-    "bugs": {
-        "url": "https://github.com/hellocoop/hello-nextjs-sample/issues"
-    },
-    "homepage": "https://github.com/hellocoop/hello-nextjs-sample#readme",
-    "license": "MIT",
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint",
-        "quickstart": "npx @hellocoop/quickstart@latest --nextjs -x \"Next.js Sample\" -i \"hello-nextjs-sample\"",
-        "https": "next dev --experimental-https",
-        "config:vercel": "npm-run-all config:vercel:*",
-        "config:vercel:secret-development": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET development",
-        "config:vercel:secret-preview": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET preview",
-        "config:vercel:secret-production": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET production"
-    },
-    "dependencies": {
-        "@hellocoop/nextjs": "^3.2.7",
-        "cobe": "^0.6.3",
-        "next": "^13.5.6",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0"
-    },
-    "devDependencies": {
-        "@hellocoop/quickstart": "~2.8.5",
-        "@types/node": "20.6.1",
-        "@types/react": "18.2.21",
-        "@types/react-dom": "18.2.7",
-        "autoprefixer": "10.4.15",
-        "eslint": "8.49.0",
-        "eslint-config-next": "^13.5.1",
-        "npm-run-all": "^4.1.5",
-        "open-cli": "^7.2.0",
-        "postcss": "^8.4.31",
-        "tailwindcss": "3.3.3",
-        "typescript": "5.2.2"
-    }
+  "name": "hello-nextjs-sample",
+  "version": "1.2.0",
+  "private": true,
+  "author": {
+    "name": "Hello Identity Co-op",
+    "email": "contact@hello.coop",
+    "url": "https://hello.coop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellocoop/hello-nextjs-sample.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hellocoop/hello-nextjs-sample/issues"
+  },
+  "homepage": "https://github.com/hellocoop/hello-nextjs-sample#readme",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "quickstart": "npx @hellocoop/quickstart@latest --nextjs_app_router -x \"Next.js Sample\" -i \"hello-nextjs-sample\"",
+    "https": "next dev --experimental-https",
+    "config:vercel": "npm-run-all config:vercel:*",
+    "config:vercel:secret-development": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET development",
+    "config:vercel:secret-preview": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET preview",
+    "config:vercel:secret-production": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET production"
+  },
+  "dependencies": {
+    "@hellocoop/nextjs": "^3.3.1",
+    "cobe": "^0.6.3",
+    "next": "15.2.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@hellocoop/quickstart": "~2.8.5",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.4",
+    "npm-run-all": "^4.1.5",
+    "open-cli": "^7.2.0",
+    "tailwindcss": "^4"
+  }
 }
