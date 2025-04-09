@@ -8,15 +8,15 @@ export default function Hero() {
     const { auth: { name } } = useAuth()
     return (
         <section>
-            <h1 className="text-2xl italic font-semibold">Add login and registration in seconds</h1>
+            <h1 className="text-lg sm:text-2xl italic font-semibold">Add login and registration in seconds</h1>
             <section className="relative h-64 bg-no-repeat bg-center bg-contain flex items-center justify-center my-16">
-                <p className="z-20 inline-flex items-center text-2xl font-semibold font-mono" style={{mixBlendMode: "difference"}}>
+                <p className="z-20 inline-flex items-center text-base sm:text-2xl font-semibold font-mono" style={{mixBlendMode: "difference"}}>
                   <span className="text-gray">Say Hellō to a Co-operative World</span>
                   <span className="blinker"></span>
                 </p>
                 <Globe/>
             </section>
-            <h1 className="text-2xl">{name}</h1>
+            <h1 className="text-lg sm:text-2xl font-semibold">{name}</h1>
         </section>
     )
 }
