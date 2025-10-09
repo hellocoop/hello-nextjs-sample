@@ -44,7 +44,7 @@ const Header = () => {
                 </Link>
 
                 <LoggedIn>
-                    <div className="flex justify-end relative">
+                    <div className="flex justify-end relative text-[#d4d4d4]">
                         <button onClick={()=>setMenu(!menu)} className="flex items-center space-x-2 text-gray hover:bg-[#505050] py-1 px-2 rounded-md cursor-pointer">
                             <Image src={picture} alt={name} width={28} height={28} className="rounded-full bg-[#505050]" />
                             <span className="hidden md:block">{email}</span>
@@ -71,7 +71,7 @@ const Header = () => {
 
 const Footer = () => {
     return (
-        <footer className="h-12 w-full bg-[#303030] flex items-center justify-center space-x-4 text-sm text-gray">
+        <footer className="h-12 w-full bg-[#303030] text-[#d4d4d4] flex items-center justify-center space-x-4 text-sm text-gray">
             <Link href="https://www.hello.coop/terms-of-service.html" className="hover:underline">Terms of Service</Link>
             <Link href="https://www.hello.coop/privacy-policy.html" className="hover:underline">Privacy Policy</Link>
         </footer>
