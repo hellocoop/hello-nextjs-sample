@@ -29,7 +29,7 @@
     "config:vercel:secret-production": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET production"
   },
   "dependencies": {
-    "@hellocoop/nextjs": "^3.3.2",
+    "@hellocoop/nextjs": "^3.3.15",
     "cobe": "^0.6.3",
     "next": "15.5.7",
     "react": "^19.0.0",
