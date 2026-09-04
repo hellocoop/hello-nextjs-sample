@@ -26,7 +26,7 @@
     "lint": "eslint .",
     "quickstart": "npx @hellocoop/quickstart@latest --nextjs_app_router -x \"Next.js Sample\" -i \"hello-nextjs-sample\"",
     "https": "next dev --experimental-https",
-    "config:vercel": "npm-run-all config:vercel:*",
+    "config:vercel": "npm run config:vercel:secret-development && npm run config:vercel:secret-preview && npm run config:vercel:secret-production",
     "config:vercel:secret-development": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET development",
     "config:vercel:secret-preview": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET preview",
     "config:vercel:secret-production": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET production"
@@ -43,7 +43,6 @@
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
-    "npm-run-all": "^4.1.5",
     "open-cli": "^9.0.0",
     "tailwindcss": "^4"
   }
