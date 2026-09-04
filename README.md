@@ -19,7 +19,7 @@ https://youtu.be/-5Dc9CVxeU4
 
 To run locally, you will need:
 
-- [nodejs 18+](https://nodejs.org/en/download)
+- [nodejs 24+](https://nodejs.org/en/download)
 - [git](https://github.com/git-guides/install-git)
 - A [GitHub](https://github.com) account
 

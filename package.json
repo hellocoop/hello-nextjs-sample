@@ -16,6 +16,9 @@
   },
   "homepage": "https://github.com/hellocoop/hello-nextjs-sample#readme",
   "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
