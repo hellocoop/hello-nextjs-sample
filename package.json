@@ -23,7 +23,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "quickstart": "npx @hellocoop/quickstart@latest --nextjs_app_router -x \"Next.js Sample\" -i \"hello-nextjs-sample\"",
     "https": "next dev --experimental-https",
     "config:vercel": "npm-run-all config:vercel:*",
@@ -32,20 +32,19 @@
     "config:vercel:secret-production": "node -e \"process.stdout.write(crypto.randomBytes(32).toString('hex'))\" | vercel env add HELLO_COOKIE_SECRET production"
   },
   "dependencies": {
-    "@hellocoop/nextjs": "^3.3.15",
-    "cobe": "^0.6.3",
-    "next": "15.5.7",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@hellocoop/nextjs": "^3.4.0",
+    "cobe": "^2.0.1",
+    "next": "16.3.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@hellocoop/quickstart": "~2.8.5",
+    "@hellocoop/quickstart": "~2.10.0",
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "15.5.7",
+    "eslint-config-next": "16.3.4",
     "npm-run-all": "^4.1.5",
-    "open-cli": "^7.2.0",
+    "open-cli": "^9.0.0",
     "tailwindcss": "^4"
   }
 }
