@@ -27,8 +27,11 @@ function Globe() {
 
   useEffect(() => {
     let phi = 0;
+    let frame;
+    const canvas = canvasRef.current;
+    const holder = canvas.parentElement;
 
-    const globe = createGlobe(canvasRef.current, {
+    const globe = createGlobe(canvas, {
       devicePixelRatio: 2,
       width: 375 * 2,
       height: 375 * 2,
@@ -67,23 +70,32 @@ function Globe() {
         { location: [-12.0464, -77.0428], size: 0.035 }, //Lima
         { location: [9.0765, 7.3986], size: 0.035 }, //Abuja
       ],
-      onRender: (state) => {
-        // Called on every animation frame.
-        // `state` will be an empty object, return updated params.
-        state.phi = phi;
-        phi += 0.005;
-      }
     });
 
+    // cobe 2 no longer runs its own animation loop; drive it with requestAnimationFrame.
+    const animate = () => {
+      globe.update({ phi });
+      phi += 0.005;
+      frame = requestAnimationFrame(animate);
+    };
+    animate();
+
     return () => {
+      cancelAnimationFrame(frame);
       globe.destroy();
+      // cobe 2 moves the canvas into a wrapper div it creates; put it back so React can unmount it.
+      if (canvas.parentElement !== holder) canvas.parentElement.replaceWith(canvas);
     };
   }, []);
 
+  // cobe 2 wraps the canvas in a position:relative block that fills its parent,
+  // so keep that out of the section's flex flow with an absolutely positioned holder.
   return (
-    <canvas
-      ref={canvasRef}
-      style={{ width: 375, height: 375, maxWidth: "100%", aspectRatio: 1, margin: 'auto', position: 'absolute', zIndex: 10, borderRadius: '50%' }}
-    />
+    <div style={{ position: 'absolute', inset: 0, zIndex: 10 }}>
+      <canvas
+        ref={canvasRef}
+        style={{ width: 375, height: 375, maxWidth: "100%", aspectRatio: 1, margin: 'auto', position: 'absolute', inset: 0, borderRadius: '50%' }}
+      />
+    </div>
   )
 }
